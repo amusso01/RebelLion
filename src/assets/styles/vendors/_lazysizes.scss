@@ -1,0 +1,14 @@
+/* ***** ----------------------------------------------- ***** **
+** ***** Vendors/Lazysizes Overrides
+** ***** ----------------------------------------------- ***** */
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+
+.lazyloaded {
+	@apply u-opacity-100 u-transition-opacity u-duration-slow;
+	transition: opacity 0.3s $ease-in-out;
+	opacity: 1;
+}

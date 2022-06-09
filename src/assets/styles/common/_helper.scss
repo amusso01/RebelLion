@@ -1,0 +1,39 @@
+/* PRESETS
+/––––––––––––––––––––––––*/
+
+.l-container {
+	//create the "container" with this applied to any row or any 100% width element
+	padding: 0 3rem;
+	width: 100%;
+	margin: auto;
+	max-width: 1690px;
+
+	&--small {
+		max-width: 1240px;
+	}
+
+	@include media(">tablet") {
+		padding: 0 5rem;
+	}
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+:focus {
+	outline: 0;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+%cover {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
