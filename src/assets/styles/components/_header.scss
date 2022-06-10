@@ -1,7 +1,10 @@
 .site-header {
 	background-color: transparent;
 	padding: 33px 0;
-
+	width: 100vw;
+	position: relative;
+	top: 0;
+	left: 0;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -11,20 +14,32 @@
 		width: 190px;
 		position: relative;
 		z-index: 10;
+		background-color: inherit;
+		svg {
+			position: relative;
+			z-index: 0;
+			mix-blend-mode: difference;
+		}
 	}
 	&__hamburger-container {
 		position: relative;
 		z-index: 10;
 	}
 	&__nav-container {
-		opacity: 1;
-		// pointer-events: none;
-		position: fixed;
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
 		z-index: 9;
 		top: 0px;
 		left: 0px;
 		width: 100vw;
 		height: 100vh;
-		background-color: $color__text;
+		background-size: cover;
+		background-repeat: no-repeat;
+		transition: opacity 0.4s ease-in-out;
+		&.s-active {
+			opacity: 1;
+			pointer-events: all;
+		}
 	}
 }

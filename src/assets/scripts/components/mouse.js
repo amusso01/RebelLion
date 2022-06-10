@@ -1,5 +1,4 @@
 import { gsap } from "gsap";
-import MagnetMouse from "magnet-mouse";
 
 export default function mouseOn() {
 	gsap.set("#follow", { xPercent: -50, yPercent: -50 });

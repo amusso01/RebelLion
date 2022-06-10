@@ -3,6 +3,7 @@
 // Common
 @import "common/reset";
 @import "common/variables";
+@import "common/link";
 // Import sassflexbox http://sassflexboxgrid.com/views/documentation.html
 @import "common/wp-core";
 @import "common/mixin";
@@ -21,5 +22,6 @@
 @import "components/navigation";
 @import "components/footer";
 @import "components/hamburger";
+@import "components/newsletter";
 
 // Templates

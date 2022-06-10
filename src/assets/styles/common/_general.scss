@@ -20,6 +20,10 @@ body {
 	display: flex;
 	height: 100%;
 	flex-direction: column;
+	&.s-no-scroll {
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
 }
 
 main.site-main {
@@ -73,6 +77,10 @@ a {
 	color: $color__link;
 	text-decoration: none;
 	font-size: $text__p;
+
+	&:after {
+		bottom: 0.3px;
+	}
 	&:hover {
 		color: $color__link-hover;
 	}

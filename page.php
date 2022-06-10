@@ -20,9 +20,11 @@ get_header();
 
     <main class="p-page__main" role="main">
 
+    <a href="">TEST</a>
+
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'partials/page/default' ); ?>
+        <?php get_template_part( 'partials/page/hero' ); ?>
 
       <?php endwhile; ?>
 

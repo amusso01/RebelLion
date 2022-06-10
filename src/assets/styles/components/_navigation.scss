@@ -64,7 +64,7 @@
 			text-transform: uppercase;
 			display: inline-block;
 			z-index: 2;
-
+			display: none;
 			&:after {
 				@include pseudo;
 				top: 0;

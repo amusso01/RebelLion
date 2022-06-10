@@ -13,6 +13,7 @@ if ( has_nav_menu( 'footermenu' ) ) :
         'menu_class'        => 'footer-menu',
         'menu_id'           => 'menu_footer',
         'container'         => 'nav',
+        'walker' => new Site_Nav_Walker(),
         'container_class'   => 'footer-menu',
         'depth'             => 1
     ]);

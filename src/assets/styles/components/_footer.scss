@@ -1,3 +1,20 @@
 footer.site-footer {
 	background-color: $color__footerBg;
+	z-index: 0;
+	padding: 66px 0;
+
+	.site-footer__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site-footer__top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		column-gap: 50px;
+	}
+
+	.newsletter {
+		padding: 0 43px 0 0;
+	}
 }

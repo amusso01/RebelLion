@@ -1,0 +1,62 @@
+.newsletter {
+	.forminator-custom-form {
+		.forminator-field {
+			position: relative;
+		}
+
+		input[type="email"] {
+			background-color: transparent;
+			border: 1px solid $color__bright;
+			border-radius: 20px;
+			display: inline-flex;
+			width: 100%;
+			padding: 10px 19px;
+			font-weight: 600;
+			align-items: center;
+			justify-content: center;
+			color: $color__bright;
+			line-height: 0;
+			&::placeholder {
+				font-weight: 400;
+				color: $color__bright;
+				opacity: 0.4;
+			}
+		}
+
+		.forminator-error-message {
+			margin-top: 5px;
+			color: $color__bright;
+			display: inline-block;
+			padding: 3px 19px;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: -35px;
+		}
+
+		.forminator-response-message {
+			color: $color__bright;
+			margin-bottom: 4px;
+		}
+
+		.forminator-row-last {
+			margin-bottom: 0;
+		}
+
+		button.forminator-button-submit {
+			border: none;
+			font-size: 26px;
+			color: $color__text;
+			background-color: transparent;
+			position: relative;
+			margin-left: 3px;
+
+			@extend %link;
+
+			&:after {
+				background-color: $color__bright;
+				height: 5px;
+			}
+		}
+	}
+}

@@ -14,7 +14,7 @@ if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail (); ?>
 		</img>
 		<div class="hero-content">
-		
+			<a href="">PROVA</a>
 		</div>
 	</section>
 <?php endif; ?>

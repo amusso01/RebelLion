@@ -15,4 +15,5 @@
     <rect id="Rectangle_155" data-name="Rectangle 155" width="9.316" height="42.185" transform="translate(31.432 8.364)" fill="#101010"/>
     <rect id="Rectangle_156" data-name="Rectangle 156" width="15.503" height="8.484" transform="translate(21.653 30.377)" fill="#f39200"/>
   </svg>
+  <div class="js-menu-overlay o-menu-overlay"  id="burgerOverlay" ></div>
 </button><!-- hamburger  -->

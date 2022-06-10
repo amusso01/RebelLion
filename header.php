@@ -52,7 +52,7 @@ $displaySocial = get_theme_mod('display-social');
 			<?php get_template_part( 'partials/header/logo' ); ?>
 		</div>
 		
-		<div class="site-header__nav-container">
+		<div class="site-header__nav-container js-menu" id="menuContainer" style="background-image: url(<?php echo get_template_directory_uri(  ) ?>/dist/images/menu-bg.jpg);">
 			<?php get_template_part( 'partials/navigation/primary' ); ?>
 		</div>
 
