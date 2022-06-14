@@ -96,5 +96,11 @@ footer.site-footer {
 		a {
 			font-size: 14px;
 		}
+		a {
+			&:hover {
+				text-decoration: underline;
+				color: $color__text;
+			}
+		}
 	}
 }

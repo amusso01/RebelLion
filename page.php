@@ -24,10 +24,11 @@ get_header();
 
     <!-- PAGE ABOUT -->
     <?php if(is_page( 'about' ) || is_page(18)) : ?>
-
       <?php get_template_part( 'partials/page/about' ) ?>
 
-    <?php elseif(is_page() || is_page())  : ?>
+    <!-- PAGE REBELS -->
+    <?php elseif(is_page('rebels') || is_page(20))  : ?>
+      <?php get_template_part( 'partials/page/rebels' ) ?>
 
     <?php endif; ?>
 

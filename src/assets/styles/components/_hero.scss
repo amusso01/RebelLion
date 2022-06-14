@@ -63,4 +63,28 @@
 			font-weight: 300;
 		}
 	}
+
+	// BLACK HERO
+	.bg-color {
+		min-height: 780px;
+		position: relative;
+
+		.text-container {
+			position: relative;
+			padding-top: 133px;
+			padding-bottom: 116px;
+		}
+
+		.hero-text {
+			color: $color__bright;
+			font-size: 36px;
+			line-height: 46px;
+			font-weight: 300;
+
+			position: absolute;
+			max-width: 520px;
+			right: 5%;
+			top: 55%;
+		}
+	}
 }
