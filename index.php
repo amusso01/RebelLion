@@ -17,18 +17,20 @@ get_header();
 
 <div data-router-wrapper>
   <div class="" data-router-view="index">
+    
     <main class="p-index_main" role="main" >
-      <header>
-        <h1>Latest Posts</h1>
-      </header>
 
+
+       <!-- PAGE HERO -->
+       <?php get_template_part( 'partials/page/hero' ); ?>
+       
       <div>
 
         <?php if ( have_posts() ) : ?>
 
           <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'partials/news/preview' ); ?>
+            <?php get_template_part( 'partials/projects/preview' ); ?>
 
           <?php endwhile; ?>
 
@@ -44,7 +46,6 @@ get_header();
 
     </main>
 
-    <?php get_sidebar(); ?>
 
   </div>
 </div>

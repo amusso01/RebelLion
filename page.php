@@ -30,6 +30,10 @@ get_header();
     <?php elseif(is_page('rebels') || is_page(20))  : ?>
       <?php get_template_part( 'partials/page/rebels' ) ?>
 
+    <!-- PAGE SERVICES -->
+    <?php elseif(is_page('services') || is_page(22))  : ?>
+      <?php get_template_part( 'partials/page/services' ) ?>
+
     <?php endif; ?>
 
 
