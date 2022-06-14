@@ -59,3 +59,11 @@
 		}
 	}
 }
+
+.link-line {
+	@extend %link;
+}
+
+.link-line-hidden {
+	@extend %link--hidden;
+}

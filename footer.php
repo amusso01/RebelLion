@@ -23,7 +23,7 @@
 			</div>
 			<!-- CONTACT -->
 			<div class="contact-info">
-				<p>02921 00001</p>
+				<p><a href="tel:02921 00001">02921 00001</a> </p>
 				<p><a href="mailto:rebel@rebel-lion.agency">rebel@rebel-lion.agency</a></p>
 			</div>
 			<!-- ADDRESS -->

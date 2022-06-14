@@ -16,19 +16,21 @@ get_header();
 ?>
 
 <div data-router-wrapper>
-  <div class="" data-router-view="page">
+  <div class="" data-scroll-container data-router-view="page">
 
-    <main class="p-page__main" role="main">
+    <!-- PAGE HERO -->
+    <?php get_template_part( 'partials/page/hero' ); ?>
 
-    <a href="">TEST</a>
 
-      <?php while ( have_posts() ) : the_post(); ?>
+    <!-- PAGE ABOUT -->
+    <?php if(is_page( 'about' ) || is_page(18)) : ?>
 
-        <?php get_template_part( 'partials/page/hero' ); ?>
+      <?php get_template_part( 'partials/page/about' ) ?>
 
-      <?php endwhile; ?>
+    <?php elseif(is_page() || is_page())  : ?>
 
-    </main>
+    <?php endif; ?>
+
 
   </div>
 </div>

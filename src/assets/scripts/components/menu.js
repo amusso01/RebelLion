@@ -9,7 +9,7 @@ function openMenu(e) {
 	// TODO ANIMATION for circle before menu appear (MAKE A GSAP TIMELINE)
 	// SET WIDTH AND HEIGHT OF CIRCLE VIA JS based on Screen size
 	// menuOverlay.classList.toggle("s-active");
-	// document.body.classList.toggle("s-no-scroll");
+	document.body.classList.toggle("s-no-scroll");
 }
 
 const menuInteraction = () => {

@@ -13,7 +13,7 @@ get_header();
 <div data-router-wrapper>
   <div class="" data-router-view="page">
 
-    <main class="p-page__main" role="main">
+    <main class="p-home__main" role="main">
 
       <?php while ( have_posts() ) : the_post(); ?>
 

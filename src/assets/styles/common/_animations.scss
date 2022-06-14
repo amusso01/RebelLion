@@ -1,0 +1,25 @@
+// KEYFRAMES
+@keyframes FadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(53%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes TextColor {
+	0% {
+		transform: translatex(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+// CLASSES
+.in-viewport {
+	animation: FadeInUp 1.2s $ease-in-out;
+}

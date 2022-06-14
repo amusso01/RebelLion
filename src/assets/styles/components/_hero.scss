@@ -1,0 +1,66 @@
+.p-page-hero {
+	p {
+		color: $color__bright;
+	}
+	.bg-image {
+		min-height: 700px;
+		position: relative;
+		background-size: cover;
+		background-position: 22vw;
+		@include media("<phone") {
+			background-position: left;
+		}
+		&::after {
+			@include pseudo;
+			width: 100vw;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			background: rgb(0, 0, 0);
+			background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 1) 0%,
+				rgba(0, 0, 0, 1) 39%,
+				rgba(0, 0, 0, 0.7651435574229692) 61%,
+				rgba(0, 0, 0, 0.5718662464985995) 100%
+			);
+		}
+	}
+
+	.text-container {
+		z-index: 2;
+		position: relative;
+		padding-top: 133px;
+		padding-bottom: 116px;
+	}
+
+	.hero-showcase {
+		color: $color__bright;
+		overflow-y: hidden;
+		> div {
+			overflow-y: hidden;
+		}
+	}
+
+	.u-flex {
+		width: 100%;
+		row-gap: 60px;
+	}
+
+	.hero-showcase {
+		font-size: 60px;
+		line-height: 64px;
+		font-weight: 600;
+	}
+
+	.hero-more {
+		align-self: center;
+		margin-left: 150px;
+		p {
+			font-size: 36px;
+			line-height: 46px;
+			font-weight: 300;
+		}
+	}
+}

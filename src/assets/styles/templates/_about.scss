@@ -1,0 +1,56 @@
+.p-about-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	row-gap: 150px;
+	margin-bottom: 200px;
+
+	.left-top {
+		grid-column: 2 / span 4;
+		.light {
+			margin-bottom: 80px;
+		}
+	}
+
+	.right-top {
+		grid-column: 8 / -1;
+	}
+
+	.left-bottom {
+		grid-column: 1 / span 5;
+	}
+
+	.right-bottom {
+		grid-column: 8 / span 4;
+	}
+
+	.light {
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 46px;
+	}
+
+	.bold {
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 64px;
+	}
+}
+
+.p-about-team {
+	margin-bottom: 140px;
+	.big-text {
+		margin-bottom: 88px;
+		font-size: 55px;
+		line-height: 70px;
+		padding-right: 150px;
+		font-weight: 300;
+	}
+
+	.link-line {
+		font-size: 26px;
+		&:after {
+			height: 4px;
+			background-color: $color__footerBg;
+		}
+	}
+}
