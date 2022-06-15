@@ -10,6 +10,7 @@ import {
 } from "./components/highway.js";
 import Fade from "./transitions/Fade";
 import mouseInit from "./components/mouse";
+import { tabInteraction, catDisable } from "./components/tabs";
 
 import { init as globalInit } from "./components/global.js";
 

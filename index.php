@@ -17,7 +17,7 @@ get_header();
 
 <div data-router-wrapper>
   <div class="" data-router-view="index">
-    
+
     <main class="p-index_main" role="main" >
 
 
@@ -28,11 +28,17 @@ get_header();
 
         <?php if ( have_posts() ) : ?>
 
-          <?php while ( have_posts() ) : the_post(); ?>
+          <section class="l-container--small" data-scroll-section>
 
-            <?php get_template_part( 'partials/projects/preview' ); ?>
+            <div class="p-index-grid">
+              <?php while ( have_posts() ) : the_post(); ?>
 
-          <?php endwhile; ?>
+                  <?php get_template_part( 'partials/projects/preview' ); ?>
+                  
+              <?php endwhile; ?>
+            </div>
+
+          </section>
 
           <?php get_template_part( 'partials/global/pagination-archive' ); ?>
 

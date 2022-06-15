@@ -1,0 +1,20 @@
+.p-index_main {
+	background-color: $color__dark;
+	padding-bottom: 120px;
+}
+
+.p-index-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+	row-gap: 80px;
+}
+
+.o-news-card {
+	color: $color__bright;
+	p,
+	a,
+	h3 {
+		color: $color__bright;
+	}
+}
