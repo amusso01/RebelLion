@@ -88,3 +88,69 @@
 		}
 	}
 }
+
+.p-single-hero {
+	position: relative;
+	h1 {
+		color: $color__bright;
+		text-transform: capitalize;
+		font-size: 105px;
+		line-height: 110px;
+		padding-right: 90px;
+	}
+
+	.text-container {
+		z-index: 2;
+		position: relative;
+		padding-top: 133px;
+		padding-bottom: 116px;
+	}
+
+	.bg-image {
+		min-height: 700px;
+		position: relative;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		&::after {
+			@include pseudo;
+			width: 100vw;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			background: rgb(0, 0, 0);
+			background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 1) 0%,
+				rgba(0, 0, 0, 0.9472163865546218) 39%,
+				rgba(0, 0, 0, 0.5718662464985995) 59%,
+				rgba(0, 0, 0, 0) 78%
+			);
+		}
+	}
+
+	.infoBanner {
+		background-color: $color__dark;
+		padding: 30px 0;
+
+		p {
+			font-size: 24px;
+			font-weight: 300;
+			color: $color__bright;
+			&.h5 {
+				font-size: 24px;
+				letter-spacing: 0.9px;
+				line-height: 26px;
+				margin-bottom: 8px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.infoBanner__flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

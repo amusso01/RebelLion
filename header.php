@@ -62,6 +62,5 @@ $displaySocial = get_theme_mod('display-social');
 	</div>
 </header><!-- .site-header -->
 
-<main class="site-main">
 
 

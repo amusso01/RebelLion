@@ -1,0 +1,19 @@
+.p-single-navigation {
+	background-color: $color__dark;
+	padding: 120px 0 80px;
+
+	h2 {
+		color: $color__bright;
+		font-size: 60px;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+	.o-news-card {
+		h3 {
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 26px;
+			letter-spacing: 0.9px;
+		}
+	}
+}

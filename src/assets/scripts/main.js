@@ -13,16 +13,32 @@ import mouseInit from "./components/mouse";
 import { tabInteraction, catDisable } from "./components/tabs";
 
 import { init as globalInit } from "./components/global.js";
+import { carousel } from "./components/carousel";
 
 // Init on first load
 globalInit();
 // Mouse
 mouseInit();
 
+const isGlide = document.querySelector(".glide");
+if (typeof isGlide != "undefined" && isGlide != null) {
+	carousel.mount();
+}
+
+class CustomRenderer extends Highway.Renderer {
+	// Hooks/methods
+	onEnterCompleted() {
+		carousel.mount();
+	}
+}
+
 // Init Highway
 const H = new Highway.Core({
 	transitions: {
 		default: Fade
+	},
+	renderers: {
+		single: CustomRenderer
 	}
 });
 

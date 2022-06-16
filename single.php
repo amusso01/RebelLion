@@ -10,32 +10,27 @@
 get_header();
 ?>
 
-	<div id="primary" class="container content-area">
-		<div class="row">
-			<main id="main" class="site-main sidebar">
+<div data-router-wrapper>
+  <div class="" data-router-view="single">
 
-			<?php
-			while ( have_posts() ) :
-				the_post();
+    <main class="p-single_main" role="main" >
 
-				get_template_part( 'template-parts/content', get_post_type() );
+			<!-- PAGE HERO -->
+			<?php get_template_part( 'partials/projects/single-hero' ); ?>
 
-				the_post_navigation();
+			<!-- PAGE CONTENT -->
+			<?php get_template_part( 'partials/projects/preview-single' ); ?>
+							
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
 
-			endwhile; // End of the loop.
-			?>
-
-			</main><!-- #main -->
-
-			<?php get_sidebar(); ?>
-
-		</div>
-	</div><!-- #primary -->
+			<!-- PAGE POST NAVIGATION -->
+			<?php get_template_part( 'partials/projects/single-navigation' ); ?>
+ 
+		 </main>
+ 
+ 
+	 </div>
+</div>
 
 <?php
 get_footer();

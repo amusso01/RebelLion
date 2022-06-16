@@ -11,36 +11,47 @@ get_header();
 ?>
 
 
-<main role="main" class=" main rchive-main">
 
-<?php if ( have_posts() ) : ?>
+<div data-router-wrapper>
+  <div class="" data-router-view="index">
 
-	<header class="page-header">
-	<?php
-	the_archive_title( '<h1 class="page-title">', '</h1>' );
-	the_archive_description( '<div class="archive-description">', '</div>' );
-	?>
-	</header><!-- .page-header -->
+    <main class="p-index_main" role="main" >
 
-	<?php
-	/* Start the Loop */
-	while ( have_posts() ) :
-		the_post();
 
-		get_template_part( 'template-parts/content', get_post_type() );
+       <!-- PAGE HERO -->
+       <?php get_template_part( 'partials/page/hero' ); ?>
+       
+      <div>
 
-	endwhile;
+        <?php if ( have_posts() ) : ?>
 
-	
+          <section class="l-container--small" data-scroll-section>
 
-else :
+            <div class="p-index-grid">
+              <?php while ( have_posts() ) : the_post(); ?>
 
-	get_template_part( 'template-parts/content', 'none' );
+                  <?php get_template_part( 'partials/projects/preview' ); ?>
+                  
+              <?php endwhile; ?>
+            </div>
 
-endif;
-?>
+          </section>
 
-</main><!-- #main -->
+          <?php get_template_part( 'partials/global/pagination-archive' ); ?>
+
+        <?php else : ?>
+
+          <?php get_template_part( 'partials/global/not_found' ); ?>
+
+        <?php endif; ?>
+
+      </div>
+
+    </main>
+
+
+  </div>
+</div>
 
 
 <?php
