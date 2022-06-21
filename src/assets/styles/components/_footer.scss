@@ -79,6 +79,11 @@ footer.site-footer {
 			font-weight: 700;
 			position: relative;
 			display: inline-block;
+
+			@extend .link-line-hidden;
+			&:after{
+				height: 3px;
+			}
 		}
 	}
 

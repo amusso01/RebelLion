@@ -1,0 +1,38 @@
+.p-single-jobs-layout {
+	padding: 120px 0;
+	margin-bottom: 180px;
+
+	.l-container--narrow{
+		>p{
+			margin-bottom: 30px;
+			color: #777777;
+			&strong{
+				color: $color__text;
+			}
+		}
+		a{
+			color: #777777;
+		}
+		h1,h2,h3,h4,h5,h6 strong{
+			color: $color__text;
+			margin-bottom: 5px;
+		}
+	}
+
+	.apply{
+		display: inline-block;
+		float: right;
+		color: $color__footerBg!important;
+
+		margin-top: 70px;
+
+		@extend .link-line;
+
+		font-size: 26px;
+		color: $color__footerBg;
+
+		&:after{
+			height: 5px;
+		}
+	}
+}

@@ -154,3 +154,49 @@
 		align-items: center;
 	}
 }
+
+
+.p-jobs-hero{
+	background-color: $color__dark;
+	color: $color__bright;
+	min-height: 550px;
+	display: flex;
+	align-items: flex-end;
+
+	a,p{
+		color: $color__bright;
+	}
+
+	.back{
+		font-weight: 300;
+		font-size: 18px;
+		margin-bottom: 50px;
+		display: block;
+		 i{
+			display: inline-block;
+			margin-right: 5px;
+		 }
+	}
+
+	.title{
+		margin-bottom: 50px;
+		h1{
+			margin-bottom: 5px;
+		}
+	}
+
+	.apply{
+		display: inline-block;
+		float: right;
+		
+		@extend .link-line;
+
+		font-size: 26px;
+		color: $color__footerBg;
+
+		&:after{
+			height: 5px;
+		}
+
+	}
+}
