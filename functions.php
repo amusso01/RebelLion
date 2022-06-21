@@ -26,6 +26,7 @@ require get_template_directory() . '/library/function-dev.php';
 // general settings, enqueue, theme support, disable backend-theme-editor & more
 require get_template_directory() . '/library/function-settings.php';
 require get_template_directory() . '/library/function-acf.php';
+require get_template_directory() . '/library/function-cpt.php';
 
 
 

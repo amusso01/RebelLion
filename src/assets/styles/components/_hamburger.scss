@@ -9,7 +9,7 @@
 	.o-menu-overlay {
 		width: 0vw;
 		height: 0vw;
-		background-color: $color__text;
+		background-color: $color__footerBg;
 		border-radius: 50%;
 		position: absolute;
 		top: 50%;
@@ -18,9 +18,5 @@
 		transform: translate(-50%, -50%);
 		transition: all 0.5s $ease-in-out;
 		pointer-events: none;
-		&.s-active {
-			width: 290vw;
-			height: 290vw;
-		}
 	}
 }

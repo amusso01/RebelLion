@@ -11,15 +11,19 @@ get_header();
 ?>
 
 <div data-router-wrapper>
-  <div class="" data-router-view="single">
+  <div class="" data-router-view="single" data-scroll-container>
 
-    <main class="p-single_main" role="main" data-scroll-container >
+    <main class="p-single_main p-news-main" role="main" >
 
 			<!-- PAGE HERO -->
-			<?php get_template_part( 'partials/projects/single-hero' ); ?>
+			<?php get_template_part( 'partials/news/single-hero' ); ?>
 
 			<!-- PAGE CONTENT -->
-			<?php get_template_part( 'partials/projects/preview-single' ); ?>
+		  <section data-scroll-section  class="p-single-news-layout l-container--small">
+				
+				<?php the_content() ?>
+
+			</section>
 							
 
 

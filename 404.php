@@ -14,13 +14,8 @@ get_header(); ?>
   
     <main class="p-404_main" role="main" data-router-view="404">
 
-      <header>
-        <h1 class="u-h2" data-s2r-el><?php _e( 'Page Not Found', 'bymattlee' ); ?></h1>
-      </header>
-      <div class="u-rich-text u-mt-20 md:u-mt-40">
-        <p data-s2r-el><?php _e( 'Sorry, but the page you were trying to view does not exist.', 'bymattlee' ); ?></p>
-        <p data-s2r-el><a href="<?php echo home_url(); ?>" class="o-button"><?php _e( 'Go Home', 'bymattlee' ); ?></a></p>
-      </div>
+    <?php get_template_part( 'partials/components/hero-404' ); ?>
+
     </main>
 
 </div>

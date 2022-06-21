@@ -256,6 +256,12 @@ function we_login_logo() {
 		@import url('<?php echo $gFontUrl ?>');
 	<?php endif; ?>
 
+	body.login {
+		background:#000;
+	}
+
+
+
 		body{
 		<?php if($fontFamily): ?>
 			font-family: <?php echo $fontFamily ?>!important;
@@ -263,23 +269,24 @@ function we_login_logo() {
 		}
 	
         #login h1 a, .login h1 a {
-            background-image: url( <?php echo $customLogo ?>);
-			background-repeat: no-repeat;
-			background-size: 70px;
-			<?php if($fontFamily): ?>
-			font-family: <?php echo $fontFamily ?>!important;
-			<?php endif; ?>
-        }
-        body.login div#login form#loginform p.submit input#wp-submit {
-			background-color: transparent;
-			<?php if($fontFamily): ?>
-			font-family: <?php echo $fontFamily ?>!important;
-			<?php endif; ?>
-			color: black;
-			text-shadow: none;
-			box-shadow: none;
-			border: 1px solid black;
-			border-radius: 1px;
+				background-image: url( <?php echo $customLogo ?>);
+				background-repeat: no-repeat;
+				background-size: 260px;
+				width:100%;
+				<?php if($fontFamily): ?>
+				font-family: <?php echo $fontFamily ?>!important;
+				<?php endif; ?>
+					}
+					body.login div#login form#loginform p.submit input#wp-submit {
+				background-color: transparent;
+				<?php if($fontFamily): ?>
+				font-family: <?php echo $fontFamily ?>!important;
+				<?php endif; ?>
+				color: black;
+				text-shadow: none;
+				box-shadow: none;
+				border: 1px solid black;
+				border-radius: 1px;
 		}
 		body.login div#login .message{
 			border: 2px solid <?php echo $mainColor ?>;
@@ -373,3 +380,11 @@ function bml_change_post_object() {
 	$labels->name_admin_bar = 'Projects';
 }
 add_action( 'init', 'bml_change_post_object' );
+
+/**
+ * Modify Excerpt Length
+ */
+function custom_excerpt_length( $length ) {
+	return 23;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

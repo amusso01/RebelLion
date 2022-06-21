@@ -1,0 +1,40 @@
+.p-index-news {
+	.o-news-card {
+		h3 {
+			line-height: 26px;
+			font-size: 24px;
+			letter-spacing: 0.9px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.excerpt {
+			p {
+				line-height: 22px;
+				font-size: 18px;
+				font-weight: 300;
+			}
+		}
+
+		.date {
+			position: absolute;
+			background-color: #fff;
+			color: $color__text;
+			font-weight: 300;
+			padding: 8px 10px;
+			border-radius: 19px;
+			display: inline-flex;
+			align-items: center;
+			vertical-align: middle;
+			justify-content: center;
+			line-height: 16px;
+			pointer-events: none;
+			top: 10px;
+			right: 15px;
+			time {
+				display: inline-block;
+				margin-left: 6px;
+			}
+		}
+	}
+}

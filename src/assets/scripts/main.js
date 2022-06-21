@@ -6,7 +6,10 @@ import Highway from "@dogstudio/highway";
 import {
 	setActiveLink,
 	updateBodyClasses,
-	trackGA
+	trackGA,
+	SingleRenderer,
+	ServicesRenderer,
+	AboutRenderer
 } from "./components/highway.js";
 import Fade from "./transitions/Fade";
 import mouseInit from "./components/mouse";
@@ -19,17 +22,11 @@ import { carousel } from "./components/carousel";
 globalInit();
 // Mouse
 mouseInit();
+window.dispatchEvent(new Event("resize"));
 
 const isGlide = document.querySelector(".glide");
 if (typeof isGlide != "undefined" && isGlide != null) {
 	carousel.mount();
-}
-
-class CustomRenderer extends Highway.Renderer {
-	// Hooks/methods
-	onEnterCompleted() {
-		carousel.mount();
-	}
 }
 
 // Init Highway
@@ -38,7 +35,9 @@ const H = new Highway.Core({
 		default: Fade
 	},
 	renderers: {
-		single: CustomRenderer
+		single: SingleRenderer,
+		services: ServicesRenderer,
+		about: AboutRenderer
 	}
 });
 

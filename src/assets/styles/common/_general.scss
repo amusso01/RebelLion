@@ -21,19 +21,15 @@ html {
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 
-	// &.has-scroll-smooth {
-	// 	overflow-x: hidden;
-	// }
+	overflow-x: hidden;
+	&.s-no-scroll {
+		overflow-y: hidden;
+	}
 }
 
 body {
-	display: flex;
-	height: 100%;
-	flex-direction: column;
-	&.s-no-scroll {
-		overflow-y: hidden;
-		overflow-x: hidden;
-	}
+	background-color: #ffffff;
+
 }
 
 main.site-main {

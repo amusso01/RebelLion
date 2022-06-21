@@ -65,6 +65,10 @@
 
 			@extend %link;
 
+			&:hover {
+				cursor: pointer;
+			}
+
 			&:after {
 				background-color: $color__bright;
 				height: 5px;

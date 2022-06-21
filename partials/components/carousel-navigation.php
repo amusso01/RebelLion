@@ -1,7 +1,15 @@
 <?php 
+
+$post_type = 'post';
+
+if(is_singular( 'bml-news' )){
+  $post_type = 'bml-news';
+}
+
+
 $args = array(
 
-  'post_type' => 'post',
+  'post_type' => $post_type,
   'post_status' => 'publish',
   'posts_per_page' => -1,
 
@@ -27,7 +35,7 @@ $the_query = new WP_Query( $args );
 
           <li class="glide__slide" >
 
-            <article class=" o-news-card" data-url="<?php echo  get_the_permalink() ?>">
+            <article class=" o-news-card-carousel" data-url="<?php echo  get_the_permalink() ?>">
 
             <?php if ( has_post_thumbnail() ) : ?>
               <figure class="u-mb-25" >

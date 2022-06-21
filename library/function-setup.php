@@ -105,7 +105,7 @@ add_action( 'init', 'wpseed_register_theme_menus');
     $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
     $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
     $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-    $attributes .= ' class="o-nav-menuItem magnet js-nav-menuItem"';
+    $attributes .= ' class="o-nav-menuItem js-nav-menuItem"';
 
     // Build content inside of anchor tag
     $anchor_content = apply_filters( 'the_title', $item->title, $item->ID );
@@ -133,9 +133,9 @@ add_action( 'init', 'wpseed_register_theme_menus');
   5.0 SETUP LOGIN PAGE 
 ==================================================================================*/
 
-$gFontUrl = "https://fonts.googleapis.com/css?family=Girassol&display=swap";
-$fontFamily = "'Girassol', cursive";
-$customLogo = get_stylesheet_directory_uri()."/dist/images/foundry-logo.svg";
-$mainColor = "#ff0000";
+$gFontUrl = "https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap";
+$fontFamily = "'League Spartan', sans-serif";
+$customLogo = get_stylesheet_directory_uri()."/dist/images/rebel-lion-logo.svg";
+$mainColor = "#F39200";
 
 

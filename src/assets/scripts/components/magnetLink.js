@@ -1,22 +1,22 @@
 import MagnetMouse from "magnet-mouse";
 
 // MAGNET OPTIONS MENU
-let mmMenu = new MagnetMouse({
-	magnet: {
-		element: ".magnet",
-		distance: 0
-	},
-	inCallback: function(data) {
-		let follow = document.getElementById("follow");
+// let mmMenu = new MagnetMouse({
+// 	magnet: {
+// 		element: ".magnet",
+// 		distance: 0
+// 	},
+// 	inCallback: function(data) {
+// 		let follow = document.getElementById("follow");
 
-		follow.classList.add("follow-menu-active");
-	},
-	outCallback: function() {
-		let follow = document.getElementById("follow");
+// 		follow.classList.add("follow-menu-active");
+// 	},
+// 	outCallback: function() {
+// 		let follow = document.getElementById("follow");
 
-		follow.classList.remove("follow-menu-active");
-	}
-});
+// 		follow.classList.remove("follow-menu-active");
+// 	}
+// });
 
 // MAGNET OPTIONS BURGER
 let mmBurger = new MagnetMouse({
@@ -44,4 +44,4 @@ let mmBurger = new MagnetMouse({
 	}
 });
 
-export { mmMenu, mmBurger };
+export { mmBurger };

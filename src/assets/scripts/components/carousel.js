@@ -7,7 +7,7 @@ const carousel = new Glide(".glide", {
 	touchRatio: 0,
 	loop: false,
 	dragThreshold: 0,
-	gap: 20,
+	gap: 40,
 	peek: {
 		before: 0,
 		after: 120

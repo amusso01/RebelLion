@@ -4,6 +4,10 @@
 	white-space: nowrap;
 	line-height: 140px;
 	color: $color__footerBg;
+	display: inline-block;
+}
+.text-strip-reverse {
+	transform: translateX(-500px);
 }
 .horizontal-container {
 	padding: 120px 0;

@@ -5,7 +5,6 @@
 /* ***** Vendors
 ** ***** ----------------------------------------------- ***** */
 @import "vendors/lazysizes";
-@import "vendors/locomotive";
 @import "vendors/carousel";
 
 // Common
@@ -28,11 +27,16 @@
 @import "components/newsletter";
 @import "components/hero";
 @import "components/scroll-text";
-@import "components/single-navigation";
+@import "components/carousel-navigation";
 
 // Templates
 @import "templates/about";
+@import "templates/home";
 @import "templates/rebels";
 @import "templates/services";
 @import "templates/projects";
 @import "templates/single";
+@import "templates/contact";
+@import "templates/news";
+@import "templates/single-news";
+@import "templates/404";

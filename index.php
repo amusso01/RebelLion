@@ -21,8 +21,8 @@ get_header();
     <main class="p-index_main" role="main" >
 
 
-       <!-- PAGE HERO -->
-       <?php get_template_part( 'partials/page/hero' ); ?>
+      <!-- PAGE HERO -->
+      <?php get_template_part( 'partials/components/hero-black' ); ?>
        
       <div>
 

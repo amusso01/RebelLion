@@ -16,28 +16,45 @@ get_header();
 ?>
 
 <div data-router-wrapper>
-  <div class="" data-scroll-container data-router-view="page">
-
-    <!-- PAGE HERO -->
-    <?php get_template_part( 'partials/page/hero' ); ?>
 
 
     <!-- PAGE ABOUT -->
     <?php if(is_page( 'about' ) || is_page(18)) : ?>
-      <?php get_template_part( 'partials/page/about' ) ?>
+      <div  data-router-view="about"  data-scroll-container>
+        <?php get_template_part( 'partials/components/hero-about' ); ?>
+        <?php get_template_part( 'partials/page/about' ) ?>
+      </div>
 
     <!-- PAGE REBELS -->
     <?php elseif(is_page('rebels') || is_page(20))  : ?>
+      <div  data-router-view="page"  data-scroll-container>
+      <?php get_template_part( 'partials/components/hero-black' ); ?>
       <?php get_template_part( 'partials/page/rebels' ) ?>
+      </div>
 
     <!-- PAGE SERVICES -->
     <?php elseif(is_page('services') || is_page(22))  : ?>
+      <div  data-router-view="services" data-scroll-container> 
+      <?php get_template_part( 'partials/components/hero-black' ); ?>
       <?php get_template_part( 'partials/page/services' ) ?>
+      </div>
 
+    <!-- PAGE CAREERS -->
+    <?php elseif(is_page('careers') || is_page(186))  : ?>
+      <div  data-router-view="services" data-scroll-container> 
+      <?php get_template_part( 'partials/components/hero-black' ); ?>
+      <?php get_template_part( 'partials/page/careers' ) ?>
+      </div>
+
+    <!-- PAGE CONTACT -->
+    <?php elseif(is_page('contact') || is_page(26))  : ?>
+      <div  data-router-view="page" data-scroll-container> 
+      <?php get_template_part( 'partials/components/hero-contact' ); ?>
+      <?php get_template_part( 'partials/page/contact' ) ?>
+      </div>
     <?php endif; ?>
 
 
-  </div>
 </div>
 
 

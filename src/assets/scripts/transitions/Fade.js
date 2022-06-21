@@ -4,6 +4,7 @@
 
 import Highway from "@dogstudio/highway";
 import gsap from "gsap";
+import { masterPlay } from "../components/menu";
 
 const menuContainer = document.getElementById("menuContainer");
 
@@ -12,18 +13,28 @@ class Fade extends Highway.Transition {
 		// Reset Scroll
 		window.scrollTo(0, 0);
 
+
 		// Remove Old View
 		from.remove();
 
-		// Close the menu
-		menuContainer.classList.remove("s-active");
 
 		// Animation
-		gsap.fromTo(to, 0.3, { opacity: 0 }, { opacity: 1, onComplete: done });
+		gsap.fromTo(to, 0.3, { opacity: 0 }, { opacity: 1, onComplete: done  });
+
+		
 	}
 
 	out({ from, done }) {
-		gsap.fromTo(from, 0.3, { opacity: 1 }, { opacity: 0, onComplete: done });
+
+		// NEW menu animation
+		const tl = masterPlay();
+
+		if(tl.totalProgress() == 1){
+			tl.reversed() ? tl.play() : tl.reverse();
+		}
+	
+
+		gsap.fromTo(from, 0.3, { opacity: 1 }, { opacity: 0,  delay: 0.3 ,  onComplete: done });
 	}
 }
 

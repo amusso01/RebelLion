@@ -11,15 +11,17 @@ get_header();
 ?>
 
 <div data-router-wrapper>
-  <div class="" data-router-view="page">
+  <div class="" data-router-view="home"  data-scroll-container>
+
+  <?php get_template_part( 'partials/components/hero-home' ); ?>
 
     <main class="p-home__main" role="main">
 
-      <?php while ( have_posts() ) : the_post(); ?>
+
 
         <?php get_template_part( 'partials/page/default' ); ?>
 
-      <?php endwhile; ?>
+
 
     </main>
 

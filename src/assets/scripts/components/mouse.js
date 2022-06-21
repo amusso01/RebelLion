@@ -21,6 +21,7 @@ export default function mouseOn() {
 			follow.classList.add("active");
 		});
 	});
+	
 	mouseLink.forEach(link => {
 		link.addEventListener("mouseleave", () => {
 			follow.classList.remove("active");

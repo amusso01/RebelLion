@@ -12,9 +12,33 @@
 
 .o-news-card {
 	color: $color__bright;
+
+	h3 {
+		text-transform: uppercase;
+		a {
+			line-height: 26px;
+			font-size: 24px;
+			letter-spacing: 0.9px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
 	p,
 	a,
 	h3 {
 		color: $color__bright;
+	}
+
+	figure {
+		width: 350px;
+		height: 350px;
+		position: relative;
+
+		img {
+			@extend %cover;
+
+			object-fit: cover;
+		}
 	}
 }

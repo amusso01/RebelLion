@@ -1,5 +1,3 @@
-import gsap from "gsap";
-
 const cats = document.querySelectorAll('[ data-item="service-cat" ]');
 const tabs = document.querySelectorAll("[ data-tab]");
 
@@ -36,10 +34,13 @@ const catDisable = function() {
 };
 
 // ADD LISTENER
-cats.forEach(element => {
-	element.addEventListener("click", tabInteraction);
 
-	element.addEventListener("click", catDisable);
-});
+const tabInit = function() {
+	cats.forEach(element => {
+		element.addEventListener("click", tabInteraction);
 
-export { tabInteraction, catDisable };
+		element.addEventListener("click", catDisable);
+	});
+};
+
+export { tabInteraction, catDisable, tabInit };
