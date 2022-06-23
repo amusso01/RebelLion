@@ -36,21 +36,47 @@
 	row-gap: 50px;
 	position: relative;
 
+	.bg-text-container{
+		z-index: -1;
+		position: absolute;
+		bottom: -290px;
+		right: -5rem;
+	}
+
+	.svg-star{
+		position: absolute;
+		&-green{
+			top: 40%;
+			right: 200px;
+		}
+		&-blue{
+			top: -30px;
+			right: 100px;
+		}
+		&-red{
+			bottom: 0px;
+			left: -30px;
+		}
+	}
+
 	.bg-text {
 		color: #f39200;
 		opacity: 0.15;
-		z-index: -1;
-		position: absolute;
 		font-size: 240px;
 		letter-spacing: 9px;
 		line-height: 210px;
-		bottom: -290px;
-		right: -5rem;
 		font-weight: 700;
 	}
 }
 
 .o-card-team {
+	&:nth-child(2){
+		transform: translateY(-100px);
+	}
+	&:nth-child(3){
+		transform: translateY(-200px);
+	}
+
 	> figure {
 		position: relative;
 		width: 350px;

@@ -11,7 +11,8 @@ import {
 	ServicesRenderer,
 	AboutRenderer,
 	HomeRenderer,
-	ContactRenderer
+	ContactRenderer,
+	RebelsRenderer
 } from "./components/highway.js";
 import Fade from "./transitions/Fade";
 import mouseInit from "./components/mouse";
@@ -41,7 +42,8 @@ const H = new Highway.Core({
 		services: ServicesRenderer,
 		about: AboutRenderer,
 		home: HomeRenderer,
-		contact: ContactRenderer
+		contact: ContactRenderer,
+		rebels: RebelsRenderer
 	}
 });
 

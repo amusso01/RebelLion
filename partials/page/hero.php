@@ -23,7 +23,7 @@ if ( has_post_thumbnail($postPageId) ) : ?>
 							<div><span  data-content="different angle" aria-hidden="true">different angle.</span></div>
 						
 						</div>
-						<div data-scroll data-scroll-speed=1 class="hero-more">
+						<div  class="hero-more">
 							<p>A new approach to building</p>
 							<p>your business and reaching</p>
 							<p>your audience.</p>
@@ -44,7 +44,7 @@ if ( has_post_thumbnail($postPageId) ) : ?>
 					<h1 class="stroke-text" ><?php echo get_the_title($postPageId ) ?></h1>
 
 					<?php if(get_field('hero_text')) : ?>
-					<div data-scroll data-scroll-speed=1 class="hero-text">
+					<div  class="hero-text">
 						<?php echo get_field('hero_text') ?>
 					</div>
 					<?php endif; ?>

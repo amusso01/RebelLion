@@ -5,7 +5,7 @@ function lottieAnimation(ob){
   if(!ob.fileName){
     ob.fileName = ob.path;
   }else{
-    ob.fileName = document.URL + 'wp-content/themes/FDRY/lottie/' + ob.fileName
+    ob.fileName = location.origin + '/wp-content/themes/FDRY/lottie/' + ob.fileName
   }
 
   const lottieAnimation = lottie.loadAnimation({

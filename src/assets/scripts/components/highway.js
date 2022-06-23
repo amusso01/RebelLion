@@ -285,9 +285,7 @@ class HomeRenderer extends Highway.Renderer {
 
 // Contact
 class ContactRenderer extends Highway.Renderer {
-	onEnter() {
-
-	}
+	onEnter() {}
 
 	// Hooks/methods
 	onEnterCompleted() {		
@@ -295,8 +293,99 @@ class ContactRenderer extends Highway.Renderer {
 		window.location = window.location + '#loaded';
 		window.location.reload();
 		}else{
-
+			gsap.to(
+				".hero-showcase",
+				{ opacity: 1, y: 0, duration: 1 }
+			);
 		}
+	}
+
+}
+
+// REBELS
+class RebelsRenderer extends Highway.Renderer {
+	onEnter() {}
+
+	// Hooks/methods
+	onEnterCompleted() {
+
+		// SCROLL ANIMATION
+		let trigerOb =  {
+			trigger: '[data-scroll-rebels-start]',
+			start: 'top +=200',
+			endTrigger: '[data-scroll-rebels-end]',
+			scrub: 3
+		}
+		const rebelsSrollTrigerTL = trigerTL(trigerOb);
+
+		rebelsSrollTrigerTL.to('.o-card-team' , {y:0, duration:1})
+		rebelsSrollTrigerTL.to('.bg-text-container' , { y: -70} , 0)
+
+		// STARS 
+		const svgStars = gsap.utils.toArray('.svg-star')
+
+		const randomX = random(1, 10);
+		const randomY = random(1, 10);
+		const randomDelay = random(0, 1);
+		const randomTime = random(3, 5);
+		const randomTime2 = random(5, 10);
+		const randomAngle = random(-10, 10);
+		const sine = gsap.parseEase("sine.easeInOut");
+
+
+		function rotate(target, direction) {
+  
+			gsap.to(target, randomTime2(), {
+				rotation: randomAngle(direction),
+				// delay: randomDelay(),
+				ease: sine,
+				onComplete: rotate,
+				onCompleteParams: [target, direction * -1]
+			});
+		}
+		
+		function moveX(target, direction) {
+			
+			gsap.to(target, randomTime(), {
+				x: randomX(direction),
+				ease: sine,
+				onComplete: moveX,
+				onCompleteParams: [target, direction * -1]
+			});
+		}
+		
+		function moveY(target, direction) {
+			
+			gsap.to(target, randomTime(), {
+				y: randomY(direction),
+				ease: sine,
+				onComplete: moveY,
+				onCompleteParams: [target, direction * -1]
+			});
+		}
+		
+		function random(min, max) {
+			const delta = max - min;
+			return (direction = 1) => (min + delta * Math.random()) * direction;
+		}
+
+		svgStars.forEach(can => {
+			gsap.set(can, {
+				x: randomX(-1),
+				y: randomX(1),
+				rotation: randomAngle(-1)
+			});
+		
+			moveX(can, 1);
+			moveY(can, -1);
+			rotate(can, 1);
+		});
+
+
+	}
+
+	onLeaveCompleted() {
+		[ScrollTrigger.getAll().forEach((t) => t.kill())];
 	}
 
 }
@@ -310,5 +399,6 @@ export {
 	ServicesRenderer,
 	AboutRenderer,
 	HomeRenderer,
-	ContactRenderer
+	ContactRenderer,
+	RebelsRenderer
 };
