@@ -37,7 +37,8 @@
 
 	.hero-showcase {
 		color: $color__bright;
-		overflow-y: hidden;
+		opacity: 0;
+		transform: translateY(-100px);
 		> div {
 			overflow-y: hidden;
 		}

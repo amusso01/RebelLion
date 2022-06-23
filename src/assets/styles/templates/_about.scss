@@ -13,10 +13,43 @@
 
 	.right-top {
 		grid-column: 8 / -1;
+		position: relative;
+		.lottie-stripe{
+			position: absolute;
+			top: -90px;
+			right: 30px;
+			width: 140px;
+			z-index: 2;
+		}
+		.lottie-blob{
+			position: absolute;
+			bottom: -90px;
+			right: 130px;
+			width: 105px;
+			z-index: -1;
+		}
+		.lottie-triangle{
+			position: absolute;
+			bottom: -20px;
+			left: -40px;
+			width: 105px;
+			z-index: 2;
+		}
+		figure{
+			z-index: 1;
+		}
 	}
 
 	.left-bottom {
 		grid-column: 1 / span 5;
+		position: relative;
+		.lottie-wave{
+			position: absolute;
+			top: -70px;
+			left: 30px;
+			width: 143px;
+			z-index: 2;
+		}
 	}
 
 	.right-bottom {

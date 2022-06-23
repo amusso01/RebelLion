@@ -62,5 +62,10 @@ $displaySocial = get_theme_mod('display-social');
 	</div>
 </header><!-- .site-header -->
 
+<div id="smootherWrapper">
+<div id="smootherContent">
+
+
+
 
 

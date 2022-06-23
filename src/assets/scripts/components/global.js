@@ -6,6 +6,7 @@ import Alpine from "alpinejs";
 import "lazysizes";
 import "lazysizes/plugins/bgset/ls.bgset";
 
+
 import { mmBurger } from "./magnetLink";
 import { menuInteraction } from "./menu";
 
@@ -16,6 +17,7 @@ const init = () => {
 
 	// EVENT LISTENER
 	menuInteraction();
+
 };
 
 export { init };

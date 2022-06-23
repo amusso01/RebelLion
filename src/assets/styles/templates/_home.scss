@@ -4,6 +4,11 @@
 		font-size: 60px;
 		font-weight: 300;
 		line-height: 74px;
+		.overflow{
+			overflow-y: hidden;
+			display: inline-block;
+			position: relative;
+		}
 		.bold {
 			font-weight: 600;
 		}
@@ -39,7 +44,7 @@
 .p-home__main{
 	background-color: $color__dark;
 	color: $color__bright;
-	padding: 100px 0 180px;
+	padding: 190px 0 180px;
 
 	.top{
 		margin-bottom: 70px;
@@ -97,10 +102,37 @@
 
 	.top-home-svg{
 		padding-top: 100px;
+		position: relative;
+
+		.lottie-swirl{
+			position: absolute;
+			width: 180px;
+			top: 0;
+			right: 0;
+			opacity: 0;
+		}
+		.lottie-blob{
+			position: absolute;
+			width: 500px;
+			top: 55%;
+			left: 40%;
+			transform: translate(-50% , -50%);
+			z-index: 0;
+		}
+		.lottie-triangle{
+			position: absolute;
+			width: 170px;
+			top: -150px;
+			left: 20%;
+			opacity: 0;
+			z-index: 2;
+		}
 	}
 
 	.top-home-svg__text{
 		transform: translateX(40%);
+		position: relative;
+		z-index: 5;
 
 		p{
 			font-size: 60px;

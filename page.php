@@ -27,7 +27,7 @@ get_header();
 
     <!-- PAGE REBELS -->
     <?php elseif(is_page('rebels') || is_page(20))  : ?>
-      <div  data-router-view="page"  data-scroll-container>
+      <div  data-router-view="rebels"  data-scroll-container>
       <?php get_template_part( 'partials/components/hero-black' ); ?>
       <?php get_template_part( 'partials/page/rebels' ) ?>
       </div>
@@ -48,7 +48,7 @@ get_header();
 
     <!-- PAGE CONTACT -->
     <?php elseif(is_page('contact') || is_page(26))  : ?>
-      <div  data-router-view="page" data-scroll-container> 
+      <div  data-router-view="contact" data-scroll-container> 
       <?php get_template_part( 'partials/components/hero-contact' ); ?>
       <?php get_template_part( 'partials/page/contact' ) ?>
       </div>

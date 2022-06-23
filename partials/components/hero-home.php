@@ -20,10 +20,10 @@
 				<div class="text-container">
 
 
-					<div data-scroll data-scroll-speed=1 class="home-hero-text">
-						<p>Talk? <span class="bold">It’s cheap.</span></p>
-						<p><span class="orange-overlay"></span>But walking the walk?</p>
-						<p><span class="bold">That’s what we’re about.</span></p>
+					<div class="home-hero-text">
+						<p><span class="overflow"> Talk? <span class="bold">It’s cheap.</span> </span></p>
+						<p><span class="overflow">But <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> walking the walk?</span></span></p>
+						<p><span class="overflow"><span class="bold">That’s what we’re about.</span></span></p>
 					</div>
 
 

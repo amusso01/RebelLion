@@ -69,6 +69,9 @@
 	</div>
 </footer><!-- #colophon -->
 
+</div>
+</div> <!-- smootherWrapper -->
+
 <div class="follow" id="follow">
 	<div class="follow-hover" id="followHover"></div>
 </div>

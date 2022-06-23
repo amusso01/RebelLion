@@ -102,3 +102,16 @@
 	left: 0;
 	top: 0;
 }
+
+
+// Animation
+// text-orange
+.orange-overlay{
+	position: absolute;
+	background-color: $color__footerBg;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+}

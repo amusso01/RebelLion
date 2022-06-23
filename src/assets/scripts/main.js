@@ -9,7 +9,9 @@ import {
 	trackGA,
 	SingleRenderer,
 	ServicesRenderer,
-	AboutRenderer
+	AboutRenderer,
+	HomeRenderer,
+	ContactRenderer
 } from "./components/highway.js";
 import Fade from "./transitions/Fade";
 import mouseInit from "./components/mouse";
@@ -37,7 +39,9 @@ const H = new Highway.Core({
 	renderers: {
 		single: SingleRenderer,
 		services: ServicesRenderer,
-		about: AboutRenderer
+		about: AboutRenderer,
+		home: HomeRenderer,
+		contact: ContactRenderer
 	}
 });
 
@@ -69,6 +73,8 @@ H.on("NAVIGATE_END", ({ to, location }) => {
 		const adminBarLinks = document.querySelectorAll("#wpadminbar a");
 		H.detach(adminBarLinks);
 	}
+
+	console.log()
 
 	trackGA(to, location);
 });
