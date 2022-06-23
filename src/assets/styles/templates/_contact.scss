@@ -2,6 +2,14 @@
 	padding: 300px 0 120px;
 	position: relative;
 
+	@include media("<phone-land"){
+		padding: 200px 0 120px;
+	}
+
+	@include media("<phone"){
+		padding: 100px 0 120px;
+	}
+
 	.overflow-text {
 		position: absolute;
 		top: 90px;
@@ -15,6 +23,14 @@
 		font-weight: 700;
 		letter-spacing: 3px;
 		white-space: nowrap;
+		@include media("<phone-land"){
+			top: 40px;
+			font-size: 150px;
+		}
+		@include media("<phone"){
+			top: 20px;
+			font-size: 100px;
+		}
 	}
 
 	.p-contact-grid {
@@ -22,6 +38,12 @@
 		grid-template-columns: 2fr 1fr;
 		column-gap: 120px;
 		row-gap: 50px;
+		@include media("<phone-land"){
+			column-gap: 50px;
+		}
+		@include media("<phone"){
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.form {
@@ -32,6 +54,10 @@
 			font-weight: 600;
 			line-height: 64px;
 			margin-bottom: 50px;
+			@include media("<phone"){
+				font-size: 40px;
+				line-height: 48px;
+			}
 		}
 		[data-type="characters"] {
 			display: none;

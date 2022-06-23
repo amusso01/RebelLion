@@ -7,10 +7,19 @@
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 30px;
 		margin-bottom: 80px;
+		@include media('<phone-land'){
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 150px;
+		}
+
 	}
 
 	.o-cat-item {
 		transition: opacity 0.3s $ease-in-out;
+
+		@include media('<phone-land'){
+			pointer-events: none;
+		}
 
 		&:hover {
 			cursor: pointer;
@@ -22,6 +31,7 @@
 		}
 
 		&.s-active-svg {
+	
 			i {
 				transform: rotate(80deg);
 			}
@@ -29,13 +39,26 @@
 
 		.cat-text {
 			margin: 22px 0 25px;
+
+			@include media('<phone-land'){
+				margin: 22px 0 45px;
+			}
 		}
 
 		i {
 			transition: transform 0.3s $ease-in-out;
+			@include media('<phone-land'){
+				display: none;
+			}
 			svg {
 				position: relative;
 				left: -8px;
+			}
+		}
+
+		.o-service-tab{
+			@include media ('>phone-land'){
+				display: none;
 			}
 		}
 	}
@@ -71,11 +94,16 @@
 	opacity: 1;
 	height: fit-content;
 
+	@include media('<phone'){
+		grid-template-columns: repeat(2, 1fr);
+		pointer-events: none;
+	}
+
+
 	&.s-disabled {
 		pointer-events: none;
 		height: 0;
 		opacity: 0;
-		// transition: height 0.5s $ease-in-out, opacity 0.3s;
 	}
 
 	.o-service {
@@ -93,6 +121,9 @@
 			text-transform: uppercase;
 			font-size: 21px;
 			letter-spacing: 0.9px;
+			@include media('<phone'){
+				font-size: 18px;
+			}
 		}
 	}
 }
