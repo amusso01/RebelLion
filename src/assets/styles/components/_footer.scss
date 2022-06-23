@@ -6,13 +6,23 @@ footer.site-footer {
 	.site-footer__inner {
 		display: flex;
 		flex-direction: column;
+		row-gap: 30px;
 	}
 
 	// TOP
 	.site-footer__top {
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
-		column-gap: 90px;
+		column-gap: 90px;;
+
+		@include media("<phone-land"){
+			column-gap: 30px;
+		}
+
+		@include media("<phone"){
+			grid-template-columns: 1fr;
+			row-gap: 30px;
+		}
 	}
 
 	.contact-info,
@@ -40,9 +50,25 @@ footer.site-footer {
 	.site-footer__center {
 		display: grid;
 		grid-template-columns: 1fr 1fr 2fr;
+		row-gap: 60px;
+
+		@include media("<phone-land"){
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+		@include media("<phone"){
+			grid-template-columns: 1fr;
+		}
+	
 	}
 
 	.social {
+		@include media("<phone-land"){
+			grid-column: 1 / 2;
+		}
+		@include media("<phone"){
+			grid-column: 1 / -1;
+		}
 		> p a {
 			font-size: 18px;
 			color: $color__bright;
@@ -61,6 +87,15 @@ footer.site-footer {
 		}
 	}
 
+	.drum{
+		@include media("<phone-land"){
+			grid-column: 2 / -1;
+		}
+		@include media("<phone"){
+			grid-column: 1 / -1;
+		}
+	}
+
 	.nav-footer {
 		display: flex;
 		align-items: center;
@@ -72,6 +107,12 @@ footer.site-footer {
 		list-style: none;
 		column-gap: 40px;
 		row-gap: 20px;
+		@include media("<phone-land"){
+			grid-column: 1 / -1;
+		}
+		@include media("<phone"){
+			flex-wrap: wrap;
+		}
 		.o-nav-menuItem {
 			color: $color__bright;
 			text-transform: uppercase;
@@ -91,7 +132,13 @@ footer.site-footer {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 100px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		row-gap: 15px;
+		
+		@include media("<phone-land"){
+			margin-top: 60px;
+		}
 		ul {
 			list-style: none;
 			display: flex;
