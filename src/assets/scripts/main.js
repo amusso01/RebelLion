@@ -21,11 +21,18 @@ import { tabInteraction, catDisable } from "./components/tabs";
 import { init as globalInit } from "./components/global.js";
 import { carousel } from "./components/carousel";
 
+
+
+
 // Init on first load
 globalInit();
+window.dispatchEvent(new Event("resize"));
+
+
 // Mouse
 mouseInit();
-window.dispatchEvent(new Event("resize"));
+
+
 
 const isGlide = document.querySelector(".glide");
 if (typeof isGlide != "undefined" && isGlide != null) {
@@ -75,8 +82,6 @@ H.on("NAVIGATE_END", ({ to, location }) => {
 		const adminBarLinks = document.querySelectorAll("#wpadminbar a");
 		H.detach(adminBarLinks);
 	}
-
-	console.log()
 
 	trackGA(to, location);
 });

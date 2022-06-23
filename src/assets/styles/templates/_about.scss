@@ -6,14 +6,34 @@
 
 	.left-top {
 		grid-column: 2 / span 4;
+
+		@include media('<phone-land'){
+			grid-column: 2 / span 5;
+		}
+
+		@include media('<phone'){
+			grid-column: 1 / -1;
+		}
+
 		.light {
 			margin-bottom: 80px;
+
+			@include media('<phone-land'){
+				margin-bottom: 50px;
+			}
 		}
 	}
 
 	.right-top {
 		grid-column: 8 / -1;
 		position: relative;
+
+
+		@include media('<phone'){
+			grid-column: 4 / -1;
+		}
+
+
 		.lottie-stripe{
 			position: absolute;
 			top: -90px;
@@ -43,6 +63,10 @@
 	.left-bottom {
 		grid-column: 1 / span 5;
 		position: relative;
+		@include media('<phone'){
+			grid-column: 1 / span 7;
+		}
+		
 		.lottie-wave{
 			position: absolute;
 			top: -70px;
@@ -54,18 +78,36 @@
 
 	.right-bottom {
 		grid-column: 8 / span 4;
+
+		@include media('<phone-land'){
+			grid-column: 7 / -1;
+		}
+
+		@include media('<phone'){
+			grid-column: 2 / -1;
+		}
 	}
 
 	.light {
 		font-size: 36px;
 		font-weight: 300;
 		line-height: 46px;
+		@include media('<phone-land'){
+			font-size: 32px;
+			line-height: 42px;
+			padding-left: 20px;
+		}
 	}
 
 	.bold {
 		font-weight: 600;
 		font-size: 60px;
 		line-height: 64px;
+		@include media('<phone-land'){
+			font-size: 38px;
+			line-height: 48px;
+			padding-left: 20px;
+		}
 	}
 
 	// .right-top {
@@ -90,6 +132,19 @@
 		line-height: 70px;
 		padding-right: 150px;
 		font-weight: 300;
+
+		@include media('<phone-land'){
+			font-size: 47px;
+			line-height: 58px;
+			margin-bottom: 68px;
+			padding-right: 30px;
+		}
+		@include media('<phone'){
+			font-size: 40px;
+			line-height: 52px;
+			margin-bottom: 68px;
+			padding-right: 30px;
+		}
 	}
 
 	.link-line {

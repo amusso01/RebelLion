@@ -3,27 +3,33 @@
 
 .l-container {
 	//create the "container" with this applied to any row or any 100% width element
-	padding: 0 3rem;
+	padding: 0 1.5rem;
 	width: 100%;
 	margin: auto;
 	max-width: 1690px;
 
 	&--small {
 		max-width: 1240px;
-		padding: 0 3rem;
+		padding: 0 1.5rem;
 		width: 100%;
 		margin: auto;
+		@include media(">tablet") {
+			padding: 0 3rem;
+		}
 	}
 
 	&--narrow {
 		max-width: 940px;
-		padding: 0 3rem;
+		padding: 0 1.5rem;
 		width: 100%;
 		margin: auto;
+		@include media(">tablet") {
+			padding: 0 3rem;
+		}
 	}
 
 	@include media(">tablet") {
-		padding: 0 5rem;
+		padding: 0 3rem;
 	}
 }
 
@@ -83,6 +89,14 @@
 	-webkit-background-clip: text;
 	background-repeat: no-repeat;
 	letter-spacing: 6px;
+	@include media("<phone-land") {
+		font-size: 160px;
+		letter-spacing: 4px;
+	}
+	@include media("<phone") {
+		font-size: 100px;
+		letter-spacing: 3px;
+	}
 }
 
 // TEXT

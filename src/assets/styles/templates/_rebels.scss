@@ -6,6 +6,12 @@
 
 	.bold {
 		margin-bottom: 120px;
+
+		@include media('<phone-land'){
+			font-size: 45px;
+			line-height: 55px;
+		}
+
 		> span {
 			display: block;
 
@@ -36,15 +42,35 @@
 	row-gap: 50px;
 	position: relative;
 
+	@include media('<tablet'){
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	@include media('<phone'){
+		grid-template-columns: 1fr;
+	}
+
 	.bg-text-container{
 		z-index: -1;
 		position: absolute;
 		bottom: -290px;
 		right: -5rem;
+		@include media('<phone-land'){
+			bottom: -480px;
+		}
+		@include media('<phone'){
+			bottom: -300px;
+			right: -1rem;
+		}
 	}
 
 	.svg-star{
 		position: absolute;
+		@include media('<phone'){
+			svg{
+				width: 50px;
+			}
+		}
 		&-green{
 			top: 40%;
 			right: 200px;
@@ -66,15 +92,31 @@
 		letter-spacing: 9px;
 		line-height: 210px;
 		font-weight: 700;
+		@include media('<phone-land'){
+			font-size: 195px;
+			letter-spacing: 6px;
+		}
+
+		@include media('<phone-land'){
+			font-size: 95px;
+			letter-spacing: 3px;
+			line-height: 140px;
+		}
 	}
 }
 
 .o-card-team {
 	&:nth-child(2){
 		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
 	}
 	&:nth-child(3){
 		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
 	}
 
 	> figure {
@@ -82,7 +124,12 @@
 		width: 350px;
 		height: 350px;
 		margin-bottom: 22px;
-
+		@include media('<phone-land'){
+			width: 300px;
+			height: 300px;
+			margin: 0 auto 22px
+		}
+		
 		img {
 			@extend %cover;
 

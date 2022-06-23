@@ -15,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { trigerTL } from "../animation/scrollTLTriger";
 import { homeHeroTL } from "../animation/home-hero";
 import { lottieAnimation } from "../animation/lottieSwirl";
+import { isMediumWidth } from "../utilities/check";
 
 /* global gtag, gaId */
 
@@ -246,6 +247,7 @@ class HomeRenderer extends Highway.Renderer {
 
 
 		const homeScrollTL = trigerTL(trigerOb); //INTRO TL SCROLL TRIGGER
+
 		homeScrollTL.from('.text-top', {y:100, duration:2})
 		homeScrollTL.from('.text-bottom', {y:50, duration:2}, 0)
 		homeScrollTL.to('.js-image-intro' , {y:100, duration:2}, 0)
@@ -272,7 +274,11 @@ class HomeRenderer extends Highway.Renderer {
 
 
 		// HERO TL
-		herotL.from(mySplitText.chars, {  y:100, duration:0.3, stagger:0.05 , ease: "back"})
+		if(!isMediumWidth){
+			herotL.from(mySplitText.chars, {  y:100, duration:0.3, stagger:0.05 , ease: "back"})
+		}else{
+			herotL.from(mySplitText.chars, {  y:150, duration:0.3, stagger:0.05 , ease: "back"})
+		}
 		herotL.to(overlayText, {width: "100%", duration: 0.3})
 		herotL.play();
 

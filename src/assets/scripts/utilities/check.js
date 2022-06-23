@@ -5,8 +5,8 @@
 const windowWidth = window.outerWidth;
 const xSmallWidth = 480;
 const smallWidth = 768;
-const mediumWidth = 1024;
-const largeWidth = 1280;
+const mediumWidth = 1140;
+const largeWidth = 1360;
 const xLargeWidth = 1440;
 const xxLargeWidth = 1800;
 

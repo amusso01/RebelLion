@@ -6,6 +6,9 @@
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
+	@include media('<phone'){
+			row-gap: 15px;
+	}
 	.o-nav-menuListItem {
 		&:nth-child(1) {
 			.o-nav-menuItem {
@@ -64,8 +67,9 @@
 			text-transform: uppercase;
 			display: inline-block;
 			z-index: 2;
-			// pointer-events: none;
-			// display: none;
+			@include media('<phone'){
+				font-size: 48px;
+			}
 			&:after {
 				@include pseudo;
 				top: 0;
