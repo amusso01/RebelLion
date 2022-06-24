@@ -19,7 +19,7 @@ class Fade extends Highway.Transition {
 
 
 		// Animation
-		gsap.fromTo(to, 0.3, { opacity: 0 }, { opacity: 1, onComplete: done  });
+		gsap.fromTo(to, 0.5, { opacity: 0 }, { opacity: 1, onComplete: done  });
 
 		
 	}
@@ -34,7 +34,7 @@ class Fade extends Highway.Transition {
 		}
 	
 
-		gsap.fromTo(from, 0.3, { opacity: 1 }, { opacity: 0,  delay: 0.3 ,  onComplete: done });
+		gsap.fromTo(from, 0.5, { opacity: 1 }, { opacity: 0,  delay: 0.5 ,  onComplete: done });
 	}
 }
 

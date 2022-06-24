@@ -9,6 +9,11 @@
     font-size: 60px;
     line-height: 64px;
     color: $color__bright;
+    @include media('<phone-land'){
+      margin-bottom: 53px;
+      font-size: 47px;
+      line-height: 58px;
+    }
   }
 }
 
@@ -17,6 +22,10 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
+
+  @include media('<phone-land'){
+    grid-template-columns: 1fr;
+  }
   a{
     &:hover{
       color: currentColor;
@@ -37,6 +46,9 @@
     text-transform: uppercase;
     z-index: 4;
     position: relative;
+    @include media('<phone'){
+      font-size: 21px;
+    }
   }
 
   p{

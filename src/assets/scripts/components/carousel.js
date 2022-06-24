@@ -11,7 +11,18 @@ const carousel = new Glide(".glide", {
 	peek: {
 		before: 0,
 		after: 120
-	}
+	},
+	breakpoints: {
+    1200: {
+      perView: 3
+    },
+    940: {
+      perView: 2
+    },
+    680: {
+      perView: 1
+    }
+  }
 });
 
 export { carousel };

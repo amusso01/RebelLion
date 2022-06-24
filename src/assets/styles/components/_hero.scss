@@ -123,6 +123,16 @@
 		font-size: 105px;
 		line-height: 110px;
 		padding-right: 90px;
+		@include media("<phone-land") {
+			font-size: 75px;
+			line-height: 90px;
+			padding-right: 90px;
+		}
+		@include media("<phone") {
+			font-size: 50px;
+			line-height: 65px;
+			padding-right: 0px;
+		}
 	}
 
 	.text-container {
@@ -138,6 +148,9 @@
 		background-size: cover;
 		display: flex;
 		align-items: center;
+		@include media("<phone-land") {
+			background: $color__dark!important;
+		}
 		&::after {
 			@include pseudo;
 			width: 100vw;
@@ -164,12 +177,18 @@
 			font-size: 24px;
 			font-weight: 300;
 			color: $color__bright;
+			@include media("<phone") {
+				font-size: 21px;
+			}
 			&.h5 {
 				font-size: 24px;
 				letter-spacing: 0.9px;
 				line-height: 26px;
 				margin-bottom: 8px;
 				font-weight: 700;
+				@include media("<phone") {
+					font-size: 21px;
+				}
 			}
 		}
 	}
@@ -178,6 +197,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include media("<phone") {
+			flex-direction: column;
+			row-gap: 35px;
+			align-items: flex-start;
+			justify-content: flex-start;
+
+		}
 	}
 }
 

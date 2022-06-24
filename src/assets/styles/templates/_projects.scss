@@ -8,6 +8,13 @@
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 30px;
 	row-gap: 80px;
+	@include media('<tablet'){
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include media('<phone'){
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 .o-news-card {
@@ -34,6 +41,11 @@
 		width: 350px;
 		height: 350px;
 		position: relative;
+
+		@include media('<phone-land'){
+			width: 300px;
+			height: 300px;
+		}
 
 		img {
 			@extend %cover;
