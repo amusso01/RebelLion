@@ -27,7 +27,7 @@ $teams = get_field('team_members');
         <p class="bio">
           <?php echo $member['member']['bio'] ?>
           <br>
-          <a class="link-line" href="<?php echo $member['member']['linkedin'] ?>">See on Linkedin</a>
+          <a class="link-line" href="<?php echo $member['member']['linkedin'] ?>">Connect on Linkedin</a>
         </p>
       </div>
     
@@ -52,8 +52,7 @@ $teams = get_field('team_members');
         </svg>
       </div>
       <div class="bg-text">
-        DREAM <br>
-        TEAM
+        REBELS
       </div>
     </div>
 

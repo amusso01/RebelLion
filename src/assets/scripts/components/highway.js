@@ -214,9 +214,9 @@ class HomeRenderer extends Highway.Renderer {
 			fileName: 'triangle-home.json'
 		} // OBJ to pass to lottie web
 
-		let swirlLottie = lottieAnimation(homeSwirl) // SWIRL SVG LOTTIE
-		let blobLottie = lottieAnimation(homeBlob) // BLOB SVG LOTTIE
-		let triangleLottie = lottieAnimation(homeTriangle) // TRIANGLE SVG LOTTIE
+		// let swirlLottie = lottieAnimation(homeSwirl) // SWIRL SVG LOTTIE
+		// let blobLottie = lottieAnimation(homeBlob) // BLOB SVG LOTTIE
+		// let triangleLottie = lottieAnimation(homeTriangle) // TRIANGLE SVG LOTTIE
 
 		// INTRO TL
 		let trigerOb =  {
@@ -275,9 +275,9 @@ class HomeRenderer extends Highway.Renderer {
 
 		// HERO TL
 		if(!isMediumWidth){
-			herotL.from(mySplitText.chars, {  y:100, duration:0.3, stagger:0.05 , ease: "back"})
+			herotL.from(mySplitText.words, {  y:100, duration:2 })
 		}else{
-			herotL.from(mySplitText.chars, {  y:150, duration:0.3, stagger:0.05 , ease: "back"})
+			herotL.from(mySplitText.words, {  y:150, duration:2 })
 		}
 		herotL.to(overlayText, {width: "100%", duration: 0.3})
 		herotL.play();
@@ -301,7 +301,7 @@ class ContactRenderer extends Highway.Renderer {
 		}else{
 			gsap.to(
 				".hero-showcase",
-				{ opacity: 1, y: 0, duration: 1 }
+				{ opacity: 1, y: 15, duration: 1 }
 			);
 		}
 	}
@@ -325,7 +325,7 @@ class RebelsRenderer extends Highway.Renderer {
 		const rebelsSrollTrigerTL = trigerTL(trigerOb);
 
 		rebelsSrollTrigerTL.to('.o-card-team' , {y:0, duration:1})
-		rebelsSrollTrigerTL.to('.bg-text-container' , { y: -70} , 0)
+		rebelsSrollTrigerTL.to('.bg-text-container' , { y: -120} , 0)
 
 		// STARS 
 		const svgStars = gsap.utils.toArray('.svg-star')

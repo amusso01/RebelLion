@@ -44,7 +44,7 @@ if ( has_post_thumbnail($postPageId) ) : ?>
 					<h1 class="stroke-text" ><?php echo get_the_title($postPageId ) ?></h1>
 
 					<?php if(get_field('hero_text')) : ?>
-					<div  class="hero-text">
+					<div  class="hero-text" >
 						<?php echo get_field('hero_text') ?>
 					</div>
 					<?php endif; ?>

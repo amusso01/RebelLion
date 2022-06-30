@@ -34,12 +34,16 @@
 		position: relative;
 		padding-top: 133px;
 		padding-bottom: 116px;
+		@include media('<phone'){
+			padding-top: 63px;
+			padding-bottom: 66px;
+		}
 	}
 
 	.hero-showcase {
 		color: $color__bright;
 		opacity: 0;
-		transform: translateY(-100px);
+		transform: translateY(100px);
 		> div {
 			overflow-y: hidden;
 		}
@@ -63,8 +67,9 @@
 			line-height: 60px;
 		}
 		@include media('<phone'){
-			font-size: 40px;
-			line-height: 50px;
+			font-size: 24px;
+			line-height: 32px;
+			margin-top: 30px;
 		}
 	}
 
@@ -77,10 +82,16 @@
 			margin-left: 0px;
 			margin-top: 40px;
 		}
+
 		p {
 			font-size: 36px;
 			line-height: 46px;
 			font-weight: 300;
+			@include media('<phone'){
+				font-size: 22px;
+				line-height: 28px;
+				top: 68%;
+			}
 		}
 	}
 
@@ -89,6 +100,9 @@
 		min-height: 780px;
 		position: relative;
 
+		@include media('<phone'){
+			min-height: 480px;
+		}
 		.text-container {
 			position: relative;
 			padding-top: 133px;
@@ -102,18 +116,32 @@
 			font-weight: 300;
 
 			position: absolute;
-			max-width: 520px;
+			max-width: 620px;
 			right: 5%;
-			top: 55%;
+			top: 50%;
 
 			@include media('<phone-land'){
 				font-size: 30px;
 				line-height: 40px;
 				top: 68%;
 			}
+			@include media('<phone'){
+				font-size: 22px;
+				line-height: 28px;
+				top: 68%;
+			}
 		}
 	}
 }
+
+.p-index_main{
+	.p-page-hero{
+		.bg-color{
+			min-height: 580px;
+		}
+	}
+}
+
 
 .p-single-hero {
 	position: relative;

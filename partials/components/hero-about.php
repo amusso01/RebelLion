@@ -21,13 +21,14 @@ if ( has_post_thumbnail($postPageId) ) : ?>
     
             <div class="hero-fade js-fade" > <p class="hero-stagger">In today’s world,</p>  </div>
             <div class="hero-fade js-fade" > <p class="hero-stagger">you need a </p>  </div>
-            <div class="hero-fade js-fade" > <p class="hero-stagger hero-paint-orange">different angle. <span class="line"></span></p> </div>
+            <div class="hero-fade js-fade" > <p class="hero-stagger hero-paint-orange">new era angle.<span class="line"></span></p> </div>
           
           </div>
           <div data-scroll data-scroll-speed=1 class="hero-more">
-            <p>A new approach to building</p>
-            <p>your business and reaching</p>
-            <p>your audience.</p>
+              <p>A new approach to building</p>
+							<p>your authority within your</p>
+							<p>marketplace and reaching </p>
+							<p>your audiences. </p>
           </div>
         </div>
 

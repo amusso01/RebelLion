@@ -94,7 +94,7 @@
 		letter-spacing: 4px;
 	}
 	@include media("<phone") {
-		font-size: 100px;
+		font-size: 50px;
 		letter-spacing: 3px;
 	}
 }
@@ -128,4 +128,19 @@
 	width: 0;
 	height: 100%;
 	z-index: -1;
+}
+
+
+/* ***** ----------------------------------------------- ***** **
+** ***** Vendors/Scroll2Reveal
+** ***** ----------------------------------------------- ***** */
+
+[data-s2r-type='block-fade-up'],
+[data-s2r-type='block-fade-in'],
+[data-s2r-el]:not([data-s2r-el='stagger-fade-up']):not([data-s2r-el='stagger-fade-in']),
+[data-s2r-el='stagger-fade-up'] > *,
+[data-s2r-el='stagger-fade-in'] > *,
+[data-s2r-type='stagger-fade-up-children'] > *,
+[data-s2r-type='stagger-fade-in-children'] > * {
+  opacity: 0
 }

@@ -4,7 +4,7 @@
     <div class="o-cat-item js-cat-item" data-item="service-cat" data-cat="advertising">
       <?php get_template_part( 'svg-template/svg', 'rebel-orange' ) ?>
       <div class="cat-text">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, sed? Nihil fuga accusamus quisquam nam voluptatibus impedit libero provident eos!</p>
+        <p><?php echo get_field('advertising') ?></p>
       </div>
       <div class="cat-arrow">
         <i><?php get_template_part( 'svg-template/svg', 'icon-arrow-orange' ) ?></i>
@@ -45,7 +45,7 @@
     <div class="o-cat-item js-cat-item" data-item="service-cat" data-cat="growth">
       <?php get_template_part( 'svg-template/svg', 'rebel-green' ) ?>
       <div class="cat-text">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, sed? Nihil fuga accusamus quisquam nam voluptatibus impedit libero provident eos!</p>
+        <p><?php echo get_field('growth_text') ?></p>
       </div>
       <div class="cat-arrow">
         <i><?php get_template_part( 'svg-template/svg', 'icon-arrow-green' ) ?></i>
@@ -84,7 +84,7 @@
     <div class="o-cat-item js-cat-item" data-item="service-cat" data-cat="creative">
       <?php get_template_part( 'svg-template/svg', 'rebel-rainbow' ) ?>
       <div class="cat-text">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, sed? Nihil fuga accusamus quisquam nam voluptatibus impedit libero provident eos!</p>
+        <p><?php echo get_field('creative') ?></p>
       </div>
       <div class="cat-arrow">
         <i><?php get_template_part( 'svg-template/svg', 'icon-arrow-purple' ) ?></i>

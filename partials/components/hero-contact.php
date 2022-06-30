@@ -23,8 +23,10 @@
         <div data-scroll data-scroll-class="in-viewport" class="hero-showcase">
     
           <div>If you’re looking for a different angle</div>
-          <div>and a new approach to your media</div>
-          <div>planning & buying, <span  data-content="this is your place." aria-hidden="true">this is your place.</span></div>
+          <div>and a new approach to fuelling </div>
+          <div>your brand's growth, driving sales,</div>
+          <div>  and becoming more memorable</div>
+          <div>than ever before… this is the place!</div>
         
         </div>
 
@@ -37,5 +39,3 @@
   </div>
 </section>
 
-
-   

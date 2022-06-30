@@ -19,12 +19,21 @@
 		}
 	}
 
+
+	.job-flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 70px;
+		>p{
+			font-size: 26px;
+			font-weight: 700;
+		}
+	}
+
 	.apply{
 		display: inline-block;
-		float: right;
 		color: $color__footerBg!important;
-
-		margin-top: 70px;
 
 		@extend .link-line;
 

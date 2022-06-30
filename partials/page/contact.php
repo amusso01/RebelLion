@@ -22,7 +22,7 @@ $address = get_field('address');
 
   <div class="p-contact-grid l-container--small">
     <div class="form">
-      <h2>Short on time? <br> Leave us a message <br> and we’ll call you back.</h2>
+      <h2 data-s2r="single" data-s2r-type="block-fade-up">Short on time? <br> Leave us a message <br> and we’ll call you back.</h2>
 
       <?php echo do_shortcode( '[forminator_form id="139"]' ) ?>
     </div>

@@ -29,7 +29,10 @@ get_header();
 			<div class="l-container--narrow">
 				<?php the_content() ?>
 
-				<a href="mailto:rebel@rebel-lion.agency?subject=JOB Application: <?php echo get_the_title() ?>" class="apply">Apply now</a>
+				<div class="job-flex">
+					<p><?php echo get_field('salary') ?></p>
+					<a href="mailto:rebel@rebel-lion.agency?subject=JOB Application: <?php echo get_the_title() ?>" class="apply">Apply now</a>
+				</div>
 			</div>
 
 			</section>

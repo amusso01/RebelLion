@@ -25,9 +25,13 @@ get_header();
             <div class="top-home-grid__text">
               
               <div class="text-top">
-                <p> <span class="overflow"> We are a <span class="bold">full-service</span> </span></p>
-                <p><span class="overflow"><span class="bold">advertising agency</span> designed</span></p>
-                <p><span class="overflow">to do things differently.</span></p>
+                <p> <span class="overflow"> Rebel Lion is a <span class="bold">full-service</span> </span></p>
+                <p><span class="overflow"><span class="bold">new era agency</span> that takes </span></p>
+                <p><span class="overflow"> the ownership and commitment </span></p>
+                <p><span class="overflow"> to <span class="bold">deliver the end result</span></span></p>
+                <p><span class="overflow">of the objectives agreed </span></p>
+                <p><span class="overflow">with our clients </span></p>
+                <p><span class="overflow">under our <span class="bold"> three core disciplines.</span> </span></p>
               </div>
 
               <div class="text-bottom">

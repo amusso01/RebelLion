@@ -21,12 +21,15 @@ import { tabInteraction, catDisable } from "./components/tabs";
 import { init as globalInit } from "./components/global.js";
 import { carousel } from "./components/carousel";
 
+import Scroll2Reveal from './vendors/Scroll2Reveal.js';
+
 
 
 
 // Init on first load
 globalInit();
 window.dispatchEvent(new Event("resize"));
+const s2r = new Scroll2Reveal();
 
 
 // Mouse
@@ -66,6 +69,7 @@ if (isLoggedIn) {
 H.on("NAVIGATE_IN", ({ to, location }) => {
 	setActiveLink(location);
 	updateBodyClasses(to);
+	s2r.reInit();
 });
 
 // Executed when the page has loaded completely

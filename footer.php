@@ -36,11 +36,12 @@
 			<div class="social">
 				<p><a href="#">@wearerebel_lion</a></p>
 				<ul>
-					<li><a href="#"><?php get_template_part( 'svg-template/svg', 'rebel-lion-facebook' ) ?></a></li>
-					<li><a href="#"><?php get_template_part( 'svg-template/svg', 'rebel-lion-instagram' ) ?></a></li>
-					<li><a href="#"><?php get_template_part( 'svg-template/svg', 'rebel-lion-twitter' ) ?></a></li>
-					<li><a href="#"><?php get_template_part( 'svg-template/svg', 'rebel-lion-tiktok' ) ?></a></li>
-					<li><a href="#"><?php get_template_part( 'svg-template/svg', 'rebel-lion-linkedin' ) ?></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/rebeladagency/"><?php get_template_part( 'svg-template/svg', 'rebel-lion-facebook' ) ?></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/wearerebel_lion"><?php get_template_part( 'svg-template/svg', 'rebel-lion-instagram' ) ?></a></li>
+					<li><a target="_blank" href="https://twitter.com/wearerebel_lion"><?php get_template_part( 'svg-template/svg', 'rebel-lion-twitter' ) ?></a></li>
+					<li><a target="_blank" href="https://www.tiktok.com/@wearerebel_lion"><?php get_template_part( 'svg-template/svg', 'rebel-lion-tiktok' ) ?></a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/company/rebel-lion-advertising"><?php get_template_part( 'svg-template/svg', 'rebel-lion-linkedin' ) ?></a></li>
+					<li><a target="_blank" href="https://www.youtube.com/channel/UCx-dmET1aAxSX-4Ro2GUyig"><?php get_template_part( 'svg-template/svg', 'youtube' ) ?></a></li>
 				</ul>
 			</div>
 			<!-- The Drum -->
