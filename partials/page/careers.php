@@ -13,7 +13,7 @@
 
   <div class=" l-container--small">
 
-    <h2>Job opportunities</h2>
+    <h2  data-s2r="single" data-s2r-type="block-fade-up">Job opportunities</h2>
     <div class="c-jobs-grid">
   
       <?php if ( $the_query->have_posts() ) :

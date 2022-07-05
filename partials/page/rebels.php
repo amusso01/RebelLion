@@ -9,10 +9,10 @@ $teams = get_field('team_members');
 
 <section class="p-rebels-section l-container--small" data-scroll-rebels-start>
 
-  <p class="bold">
-    <span> How do we do this?</span>
-    <span class="orange"> By reaching highly</span> 
-    <span class="orange"> engaged audiences.</span>
+  <p class="bold" data-s2r="group" >
+    <span data-s2r-el="block-fade-up"> How do we do this?</span>
+    <span class="orange"  data-s2r-el="block-fade-up"> By reaching highly</span> 
+    <span class="orange"  data-s2r-el="block-fade-up"> engaged audiences.</span>
   </p>
 
   <div class="p-rebels-grid">

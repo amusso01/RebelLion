@@ -114,9 +114,8 @@ class AboutRenderer extends Highway.Renderer {
 
 	// Hooks/methods
 	onEnterCompleted() {
+
 		const svgLottieStripe = document.querySelector('.lottie-stripe')
-		let svgLottieTriangle = document.querySelector('.lottie-triangle')
-		let svgLottieWave = document.querySelector('.lottie-wave')
 
 		const aboutStripe = {
 			loop:true, 
@@ -124,25 +123,8 @@ class AboutRenderer extends Highway.Renderer {
 			autoplay: true,
 			path:'https://assets2.lottiefiles.com/packages/lf20_ueeohbyb.json'
 		} // OBJ to pass to lottie web
-		const aboutTriangle = {
-			loop:true, 
-			element: svgLottieTriangle,
-			autoplay: true,
-			path: "https://assets8.lottiefiles.com/packages/lf20_ycmevstt.json"
-		} // OBJ to pass to lottie web
-		const aboutWave = {
-			loop:true, 
-			element: svgLottieWave,
-			autoplay: true,
-			path: "https://assets4.lottiefiles.com/packages/lf20_ihmd2ena.json"
-		} // OBJ to pass to lottie web
 
-
-
-		
 		const stripeLottie = lottieAnimation(aboutStripe) // STRIPE SVG LOTTIE
-		const triangleAboutLottie = lottieAnimation(aboutTriangle) // TRIANGLE SVG LOTTIE
-		const waveAboutLottie = lottieAnimation(aboutWave) // TRIANGLE SVG LOTTIE
 
 
 		let trigerOb =  {
@@ -154,15 +136,6 @@ class AboutRenderer extends Highway.Renderer {
 		}
 		const textScrollTL = trigerTL(trigerOb);
 
-		gsap.to(
-			".hero-showcase",
-			{ opacity: 1, y: 0, duration: 1 }
-		);
-
-		gsap.fromTo(".hero-more", { opacity: 0 }, { opacity: 1, duration: 2 });
-
-		textScrollTL.to(".hero-more", { y: -300 }, 0);
-		textScrollTL.to(".hero-showcase", { y: -150}, 0);
 		textScrollTL.to(".text-strip-forward", { x: -1200 }, 0);
 		textScrollTL.to(".text-strip-reverse", { x: 0 }, 0);
 	}
@@ -186,33 +159,13 @@ class HomeRenderer extends Highway.Renderer {
 	// Hooks/methods
 	onEnterCompleted() {
 		const splitText = document.querySelectorAll('.home-hero-text p')
-		const mySplitText = new SplitText(splitText) //HOME HERO SPLIT TEXT
 		
 		const overlayText = document.querySelector('.p-home-hero .orange-overlay')
 		const svgLottieSwirl = document.querySelector('.lottie-swirl')
-		const svgLottieBlob = document.querySelector('.lottie-blob')
 		const svgLottieTriangle = document.querySelector('.lottie-triangle')
 
 		const herotL = homeHeroTL(); // Hero TL
 
-		const homeSwirl = {
-			loop:true, 
-			element: svgLottieSwirl,
-			autoplay: false,
-			fileName: 'swirl-home.json'
-		} // OBJ to pass to lottie web
-		const homeBlob = {
-			loop:false, 
-			element: svgLottieBlob,
-			autoplay: false,
-			fileName: 'blob-home.json'
-		} // OBJ to pass to lottie web
-		const homeTriangle = {
-			loop:true, 
-			element: svgLottieTriangle,
-			autoplay: false,
-			fileName: 'triangle-home.json'
-		} // OBJ to pass to lottie web
 
 		// let swirlLottie = lottieAnimation(homeSwirl) // SWIRL SVG LOTTIE
 		// let blobLottie = lottieAnimation(homeBlob) // BLOB SVG LOTTIE
@@ -222,25 +175,9 @@ class HomeRenderer extends Highway.Renderer {
 		let trigerOb =  {
 			trigger: '#smoothContent',
 			start: 'top top',
-			scrub: 3,
+			scrub: 2,
 		}
 
-		// let swirlPin = ScrollTrigger.create({
-		// 	trigger: '.top-home-svg',
-		// 	animation: homeScrollTL,
-		// 	pin: '.lottie-swirl',
-		// 	start: "-=50",
-		// 	scrub:true,
-		// 	end: "+=1000"
-		// })
-		// let textScrollHome = ScrollTrigger.create({
-		// 	trigger: '.bottom',
-		// 	animation: ,
-		// 	start: "-=50",
-		// 	scrub:true,
-		// 	end: "+=200",
-			
-		// })
 
 		let lastText = gsap.to('.orange-overlay-last', { width:"100%", paused:true})
 
@@ -248,42 +185,23 @@ class HomeRenderer extends Highway.Renderer {
 
 		const homeScrollTL = trigerTL(trigerOb); //INTRO TL SCROLL TRIGGER
 
-		homeScrollTL.from('.text-top', {y:100, duration:2})
-		homeScrollTL.from('.text-bottom', {y:50, duration:2}, 0)
-		homeScrollTL.to('.js-image-intro' , {y:100, duration:2}, 0)
-		homeScrollTL.to('.lottie-blob' , {y:80} , 0)
-		// homeScrollTL.to('.js-image-bottom', {y:-100}, "bottom")
-		// homeScrollTL.to('.text-bottom', {y:190},"bottom")
-		homeScrollTL.to('.text-scrolling-home', {x:-250, duration:4}, "bottom")
+		// homeScrollTL.from('.text-top', {y:100, duration:2})
+		// homeScrollTL.from('.text-bottom', {y:50, duration:2}, 0)
+		// homeScrollTL.to('.js-image-intro' , {y:100, duration:2}, 0)
+		homeScrollTL.to(svgLottieTriangle , {opacity:1, duration:2}, 0)
+		homeScrollTL.to(svgLottieSwirl , {opacity:1, duration:3}, 0)
+		homeScrollTL.to('.text-scrolling-home', {x:-2500, duration:4}, "bottom")
 		homeScrollTL.add(lastText.play(), "bottom+=2.5")
-
-
-		// LOTTIE SVG INTRO
-		let swirlGsap = gsap.to(svgLottieSwirl, { opacity:1, y:50 , duration:1 , paused: true	, onComplete: swirlLottie.play()})
-		let triangleGsap = gsap.to(svgLottieTriangle, { opacity:1, y:150 , duration:1 , paused: true, onComplete: triangleLottie.play()	})
-
-		ScrollTrigger.create({
-			trigger: '.top-home-svg',
-			start: 'bottom bottom',
-			onEnter() {
-				swirlGsap.play()
-				blobLottie.play()
-				triangleGsap.play()
-			}
-		})
 
 
 		// HERO TL
 		if(!isMediumWidth){
-			herotL.from(mySplitText.words, {  y:100, duration:2 })
+			herotL.from(splitText, {  y:100, duration:1 })
 		}else{
-			herotL.from(mySplitText.words, {  y:150, duration:2 })
+			herotL.from(splitText, {  y:100, duration:1 })
 		}
 		herotL.to(overlayText, {width: "100%", duration: 0.3})
 		herotL.play();
-
-
-		
 
 	}
 	

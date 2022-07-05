@@ -43,8 +43,9 @@
 		position: relative;
 
 		@include media('<phone-land'){
-			width: 300px;
+			width: 100%;
 			height: 300px;
+			margin: auto
 		}
 
 		img {

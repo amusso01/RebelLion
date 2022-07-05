@@ -85,6 +85,9 @@
 		row-gap: 30px;
 		padding-left: 1rem;
 	}
+	@include media('<phone'){
+		padding-left: 0px;
+	}
 
 	p {
 		font-size: 16px;

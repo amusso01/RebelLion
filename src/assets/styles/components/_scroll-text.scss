@@ -9,10 +9,17 @@
 		font-size: 90px;
 		line-height: 80px;
 	}
+	@include media("<phone") {
+		font-size: 50px;
+		line-height: 50px;
+	}
 }
 .text-strip-reverse {
 	transform: translateX(-1700px);
 }
 .horizontal-container {
 	padding: 120px 0;
+	@include media("<phone") {
+		padding: 50px 0;
+	}
 }

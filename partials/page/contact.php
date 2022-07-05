@@ -30,11 +30,11 @@ $address = get_field('address');
     <div class="info">
       <div class="single-info">
         <p>PHONE</p>
-        <p><?php echo $phone ?></p>
+        <p><a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></p>
       </div>
       <div class="single-info">
         <p>EMAIL</p>
-        <p><?php echo $email ?></p>
+        <p><a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
       </div>
       <div class="single-info">
         <p>ADDRESS</p>

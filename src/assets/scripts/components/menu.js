@@ -3,7 +3,7 @@ import gsap from "gsap";
 const hamburger = document.getElementById("hamburger");
 const menuContainer = document.getElementById("menuContainer");
 const menuOverlay = document.getElementById("burgerOverlay");
-const menuItem = document.querySelectorAll(".o-nav-menuItem");
+const menuItems = document.querySelectorAll(".o-nav-menuItem");
 
 const tl = gsap.timeline({
 	paused: true,
@@ -48,6 +48,15 @@ const menuInteraction = () => {
 	hamburger.addEventListener("click", ()=>{
 		let tl  = masterPlay()
 			tl.reversed() ? tl.play() : tl.reverse();
+	});
+
+	menuItems.forEach(element => {
+		element.addEventListener('click',(e)=>{
+			if(e.target.parentElement.classList.contains('o-nav-menuListItem--current')){
+				let tl  = masterPlay()
+				tl.reversed() ? tl.play() : tl.reverse();
+			}
+		})
 	});
 };
 

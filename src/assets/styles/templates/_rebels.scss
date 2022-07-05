@@ -4,12 +4,25 @@
 	padding-top: 100px;
 	padding-bottom: 100px;
 
+	@include media('<phone'){
+		margin-top: 0px;
+		margin-bottom: 200px;
+		padding-top: 70px;
+		padding-bottom: 100px;
+	}
+
 	.bold {
 		margin-bottom: 120px;
 
 		@include media('<phone-land'){
 			font-size: 45px;
 			line-height: 55px;
+			margin-bottom: 50px;
+		}
+
+		@include media('<phone'){
+			font-size: 32px;
+			line-height: 40px;
 		}
 
 		> span {
@@ -48,6 +61,7 @@
 	
 	@include media('<phone'){
 		grid-template-columns: 1fr;
+		row-gap: 100px;
 	}
 
 	.bg-text-container{

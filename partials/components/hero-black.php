@@ -19,7 +19,7 @@
 					<h1 class="stroke-text" ><?php echo get_the_title($postPageId ) ?></h1>
 
 					<?php if(get_field('hero_text')) : ?>
-					<div data-scroll data-scroll-speed=1 class="hero-text">
+					<div data-s2r="single" data-s2r-type="block-fade-up" class="hero-text">
 						<?php echo get_field('hero_text') ?>
 					</div>
 					<?php endif; ?>

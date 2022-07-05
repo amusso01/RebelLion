@@ -5,8 +5,8 @@
 		font-weight: 300;
 		line-height: 74px;
 		@include media ('<phone'){
-			font-size: 45px;
-			line-height: 59px;
+			font-size: 36px;
+			line-height: 49px;
 		}
 		.overflow{
 			overflow-y: hidden;
@@ -16,8 +16,8 @@
 		.bold {
 			font-weight: 600;
 			@include media ('<phone'){
-				font-size: 45px;
-				line-height: 53px;
+				font-size: 36px;
+				line-height: 43px;
 			}
 		}
 	}
@@ -27,6 +27,10 @@
 		position: relative;
 		background-size: cover;
 		display: flex;
+
+		@include media ('<phone'){
+			min-height: auto;
+		}
 
 		&::after {
 			@include pseudo;
@@ -43,8 +47,8 @@
 	.text-container {
 		z-index: 2;
 		position: relative;
-		padding-top: 133px;
-		padding-bottom: 116px;
+		padding-top: 163px;
+		padding-bottom: 76px;
 	}
 }
 
@@ -55,7 +59,7 @@
 	padding: 190px 0 180px;
 
 	@include media('<phone'){
-		padding: 100px 0 180px;
+		padding: 90px 0 140px;
 	}
 
 	.top{
@@ -75,6 +79,7 @@
 		padding-bottom: 100px;
 		@include media('<phone-land'){
 			column-gap: 30px;
+			row-gap: 50px;
 		}
 
 		@include media('<phone'){
@@ -101,12 +106,19 @@
 
 	.text-top{
 		margin-bottom: 110px;
+		@include media('<phone'){
+			margin-bottom: 50px;
+		}
 		p{
 			font-size: 49px;
 			line-height: 60px;
 			color: $color__bright;
 			@include media('<phone-land'){
 				font-size: 42px;
+			}
+			@include media('<phone'){
+				font-size: 30px;
+				line-height: 37px;
 			}
 		}
 		.bold{
@@ -116,6 +128,10 @@
 			font-weight: 700;
 			@include media('<phone-land'){
 				font-size: 42px;
+			}
+			@include media('<phone'){
+				font-size: 30px;
+				line-height: 37px;
 			}
 		}
 	}
@@ -129,6 +145,10 @@
 			@include media('<phone-land'){
 				font-size: 44px;
 			}
+			@include media('<phone-land'){
+				font-size: 30px;
+				line-height: 37px;
+			}
 		}
 	}
 	
@@ -136,6 +156,10 @@
 	.top-home-svg{
 		padding-top: 100px;
 		position: relative;
+		@include media('<phone'){
+			padding-top: 10px;
+		}
+
 
 		.lottie-swirl{
 			position: absolute;
@@ -161,14 +185,20 @@
 		}
 		.lottie-triangle{
 			position: absolute;
-			width: 170px;
-			top: -150px;
+			width: 120px;
+			top: -100px;
 			left: 20%;
 			opacity: 0;
 			z-index: 2;
+			>svg{
+				width: 130px;
+				@include media('<phone'){
+					width: 100px;
+				}
+			}
 			@include media('<phone'){
 				width: 100px;
-				top: -120px;
+				top: 100px;
 			}
 		}
 	}
@@ -185,8 +215,8 @@
 			line-height: 64px;
 			color: $color__bright;
 			@include media('<phone'){
-				font-size: 40px;
-				line-height: 45px;
+				font-size: 35px;
+				line-height: 40px;
 			}
 		}
 	}
@@ -203,6 +233,7 @@
 		@include media('<phone'){
 			flex-direction: column;
 			row-gap: 90px;
+			padding-bottom: 50px;
 		}
 		figure{
 			position: relative;
@@ -236,6 +267,11 @@
 				-webkit-background-clip: text;
 				background-repeat: no-repeat;
 				letter-spacing: 5.6px;
+				@include media('<phone'){
+					font-size: 54px;
+					letter-spacing: 3px;
+					bottom: -75px;
+				}
 			}
 		}
 	}
@@ -251,6 +287,8 @@
 
 			@include media('<phone'){
 				padding-left: 2rem ;
+				font-size: 32px;
+				line-height: 37px;
 			}
 		}
 		.bold{
@@ -261,6 +299,10 @@
 				font-size: 45px;
 				line-height: 60px;
 			}
+			@include media('<phone'){
+				font-size: 32px;
+				line-height: 37px;
+			}
 		}
 	}
 
@@ -270,8 +312,8 @@
 			font-size: 55px;
 			line-height: 70px;
 			@include media('<phone'){
-				font-size: 45px;
-				line-height: 60px;
+				font-size: 32px;
+				line-height: 37px;
 			}
 		}
 		.bold{
@@ -279,8 +321,8 @@
 			line-height: 70px;
 			font-weight: 700;
 			@include media('<phone'){
-				font-size: 45px;
-				line-height: 60px;
+				font-size: 32px;
+				line-height: 37px;
 			}
 		}
 	}

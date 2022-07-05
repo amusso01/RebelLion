@@ -17,14 +17,14 @@ if ( has_post_thumbnail($postPageId) ) : ?>
     <div class="l-container--small text-container">
         <h1 class="stroke-text"  ><?php echo get_the_title() ?></h1>
         <div class="u-flex">
-          <div class="hero-showcase">
+          <div class="hero-showcase" data-s2r="single" data-s2r-type="block-fade-up">
     
             <div class="hero-fade js-fade" > <p class="hero-stagger">In today’s world,</p>  </div>
             <div class="hero-fade js-fade" > <p class="hero-stagger">you need a </p>  </div>
             <div class="hero-fade js-fade" > <p class="hero-stagger hero-paint-orange">new era angle.<span class="line"></span></p> </div>
           
           </div>
-          <div data-scroll data-scroll-speed=1 class="hero-more">
+          <div data-s2r="single" data-s2r-type="block-fade-up" data-s2r-delay="0.3"  class="hero-more">
               <p>A new approach to building</p>
 							<p>your authority within your</p>
 							<p>marketplace and reaching </p>

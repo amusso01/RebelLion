@@ -22,11 +22,11 @@
 
         <div data-scroll data-scroll-class="in-viewport" class="hero-showcase">
     
-          <div>If you’re looking for a different angle</div>
-          <div>and a new approach to fuelling </div>
-          <div>your brand's growth, driving sales,</div>
-          <div>  and becoming more memorable</div>
-          <div>than ever before… this is the place!</div>
+
+        <p>If you’re looking for a different angle and a new approach to fuelling
+        your brand's growth, driving sales, and becoming more memorable
+        than ever before… this is the place!
+        </p>
         
         </div>
 

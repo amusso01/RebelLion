@@ -2,6 +2,11 @@
 	margin-top: 118px;
 	padding-bottom: 160px;
 
+	@include media('<phone'){
+		margin-top: 80px;
+		padding-bottom: 50px;
+	}
+
 	.o-services-cat-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -11,6 +16,10 @@
 			grid-template-columns: repeat(1, 1fr);
 			row-gap: 150px;
 		}
+		@include media('<phone'){
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 70px;
+		}
 
 	}
 
@@ -19,6 +28,12 @@
 
 		@include media('<phone-land'){
 			pointer-events: none;
+		}
+
+		@include media('<phone'){
+			>svg{
+				width: 240px;
+			}
 		}
 
 		&:hover {
@@ -42,6 +57,9 @@
 
 			@include media('<phone-land'){
 				margin: 22px 0 45px;
+			}
+			@include media('<phone'){
+				margin: 22px 0 25px;
 			}
 		}
 
@@ -97,6 +115,7 @@
 	@include media('<phone'){
 		grid-template-columns: repeat(2, 1fr);
 		pointer-events: none;
+		row-gap: 28px;
 	}
 
 
@@ -114,6 +133,9 @@
 
 		svg {
 			width: 86px;
+			@include media('<phone'){
+				width: 66px;
+			}
 		}
 
 		p {
@@ -124,6 +146,12 @@
 			@include media('<phone'){
 				font-size: 18px;
 			}
+		}
+		@include media('<phone'){
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
 		}
 	}
 }
