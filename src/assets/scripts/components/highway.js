@@ -158,14 +158,6 @@ class HomeRenderer extends Highway.Renderer {
 
 	// Hooks/methods
 	onEnterCompleted() {
-		const splitText = document.querySelectorAll('.home-hero-text p')
-		
-		const overlayText = document.querySelector('.p-home-hero .orange-overlay')
-		const svgLottieSwirl = document.querySelector('.lottie-swirl')
-		const svgLottieTriangle = document.querySelector('.lottie-triangle')
-
-		const herotL = homeHeroTL(); // Hero TL
-
 
 		// let swirlLottie = lottieAnimation(homeSwirl) // SWIRL SVG LOTTIE
 		// let blobLottie = lottieAnimation(homeBlob) // BLOB SVG LOTTIE
@@ -184,24 +176,10 @@ class HomeRenderer extends Highway.Renderer {
 
 
 		const homeScrollTL = trigerTL(trigerOb); //INTRO TL SCROLL TRIGGER
-
-		// homeScrollTL.from('.text-top', {y:100, duration:2})
-		// homeScrollTL.from('.text-bottom', {y:50, duration:2}, 0)
-		// homeScrollTL.to('.js-image-intro' , {y:100, duration:2}, 0)
-		homeScrollTL.to(svgLottieTriangle , {opacity:1, duration:2}, 0)
-		homeScrollTL.to(svgLottieSwirl , {opacity:1, duration:3}, 0)
-		homeScrollTL.to('.text-scrolling-home', {x:-2500, duration:4}, "bottom")
-		homeScrollTL.add(lastText.play(), "bottom+=2.5")
+	
+		homeScrollTL.add(lastText.play(), "bottom+=1")
 
 
-		// HERO TL
-		if(!isMediumWidth){
-			herotL.from(splitText, {  y:100, duration:1 })
-		}else{
-			herotL.from(splitText, {  y:100, duration:1 })
-		}
-		herotL.to(overlayText, {width: "100%", duration: 0.3})
-		herotL.play();
 
 	}
 	

@@ -19,36 +19,40 @@ get_header();
 
 
       <section class="top">
-        <div class="l-container--small">
+     
 
           <div class="top-home-grid">
             <div class="top-home-grid__text" >
               
               <div class="text-top"  data-s2r="single" data-s2r-type="stagger-fade-up">
-                <p> <span class="overflow" data-s2r-el> Rebel Lion is a <span class="bold">full-service</span> </span></p>
-                <p><span class="overflow"data-s2r-el><span class="bold">new era agency</span> that takes </span></p>
-                <p><span class="overflow"data-s2r-el> the ownership and commitment </span></p>
-                <p><span class="overflow"data-s2r-el> to <span class="bold">deliver the end result</span></span></p>
-                <p><span class="overflow"data-s2r-el>of the objectives agreed </span></p>
-                <p><span class="overflow"data-s2r-el>with our clients </span></p>
-                <p><span class="overflow"data-s2r-el>under our <span class="bold"> three core disciplines.</span> </span></p>
+                <p> <span class="overflow" data-s2r-el> Talk? <span class="bold">It’s cheap.</span> </span></p>
+                <p><span class="overflow"data-s2r-el>But <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> walking the walk?</span></span></p>
+                <p><span class="overflow"data-s2r-el> <span class="bold">That’s what we’re about.</span></p>
+
               </div>
 
               <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
                 <p data-s2r-el>Because what happens to</p>
                 <p data-s2r-el >things when they're overused?</p>
+                <div class="small-text" data-s2r-el>
+                  <p>They crumble</p>
+                  <p>and break,</p>
+                  <p>
+                    they become <br> 
+                    less effective.
+                  </p>
+                </div>
               </div>
-
 
             </div>
 
             <div class="figure js-image-intro" data-s2r="single" data-s2r-type="block-fade-up">
-            <figure class="">
-              <img data-srcset="<?php bml_the_image_srcset(get_field('top_image'))  ?>" data-sizes="auto" class="lazyload " alt="Rebel Lion Agency image" title="<?php echo get_the_title( get_field('top_image') ); ?>">
-            </figure>
+              <figure class="">
+                <img data-srcset="<?php bml_the_image_srcset(get_field('top_image'))  ?>" data-sizes="auto" class="lazyload " alt="Rebel Lion Agency image" title="<?php echo get_the_title( get_field('top_image') ); ?>">
+              </figure>
             </div>
           </div>
-
+<!-- 
           <div class="top-home-svg">
             <div class="lottie-swirl" data-s2r="single" data-s2r-type="block-fade-up">
               <svg xmlns="http://www.w3.org/2000/svg" width="182.214" height="218.011" viewBox="0 0 182.214 218.011">
@@ -77,9 +81,9 @@ get_header();
                 less effective.
               </p>
             </div>
-          </div>
+          </div> -->
 
-        </div>
+   
       </section>
 
 
@@ -89,7 +93,6 @@ get_header();
           
           <figure class="" data-s2r="single" data-s2r-type="block-fade-in" >
             <img data-srcset="<?php bml_the_image_srcset(get_field('bottom_image')) ?>" data-sizes="auto" class="lazyload js-image-bottom" alt="Rebel Lion Agency image" title="<?php echo get_the_title( get_field('bottom_image') ); ?>">
-            <p class="text-scrolling-home">WE AVOID TAKING THE WELL-TRODDEN PATH WE AVOID TAKING THE WELL-TRODDEN PATH</p>
           </figure>
   
           <div class="bottom-home-grid__text">

@@ -12,11 +12,11 @@
 
  ?>
 
-<section class="p-home-hero" data-scroll-section>
+<section class="p-home-hero" style="background-color:#000000; height:100vh;">
 
-	<div class="bg-image lazyload" data-sizes="auto" data-bgset="<?php echo bml_the_image_srcset( get_post_thumbnail_id() , false ); ?>" >
+	<div class="bg-image" >
 
-			<div class="l-container--small">
+			<!-- <div class="l-container--small">
 				<div class="text-container">
 
 
@@ -29,7 +29,7 @@
 
 				</div>
 
-			</div>
+			</div> -->
 			
   </div>
 

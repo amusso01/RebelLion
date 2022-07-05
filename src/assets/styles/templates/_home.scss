@@ -56,29 +56,30 @@
 .p-home__main{
 	background-color: $color__dark;
 	color: $color__bright;
-	padding: 190px 0 180px;
+	padding: 0px 0 180px;
 
 	@include media('<phone'){
 		padding: 90px 0 140px;
 	}
 
 	.top{
-		margin-bottom: 70px;
-		padding-bottom: 70px;
+		margin-bottom: 20px;
+		padding-bottom: 30px;
 	}
 
 	.bottom{
-		margin-top: 70px;
-		padding-top: 70px;
+		margin-top: 20px;
+		padding-top: 30px;
 	}
 
 	.top-home-grid{
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
 		column-gap: 50px;
 		justify-content: space-between;
-		padding-bottom: 100px;
+		padding-bottom: 40px;
 		@include media('<phone-land'){
-			column-gap: 30px;
+			column-gap: 10px;
 			row-gap: 50px;
 		}
 
@@ -104,11 +105,22 @@
 		}
 	}
 
-	.text-top{
-		margin-bottom: 110px;
-		@include media('<phone'){
-			margin-bottom: 50px;
+	.top-home-grid__text{
+		grid-column: 2 / span 6;
+		@include media ('<phone'){
+			grid-column: 2/-1;
 		}
+	}
+
+	.figure{
+		grid-column: 8 / -1;
+		figure{
+			margin-left: auto;
+		}
+	}
+
+	.text-top{
+		margin-bottom: 50px;
 		p{
 			font-size: 49px;
 			line-height: 60px;
@@ -148,6 +160,13 @@
 			@include media('<phone-land'){
 				font-size: 30px;
 				line-height: 37px;
+			}
+		}
+
+		.small-text{
+			margin-top: 25px;
+			>p{
+				font-weight: 600;
 			}
 		}
 	}
