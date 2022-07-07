@@ -3,7 +3,7 @@
 		color: $color__bright;
 	}
 	.bg-image {
-		min-height: 700px;
+		min-height: auto;
 		position: relative;
 		background-size: cover;
 		background-position: 22vw;
@@ -66,7 +66,8 @@
 	.hero-showcase {
 		font-size: 60px;
 		line-height: 64px;
-		font-weight: 600;
+		font-weight: 300;
+		max-width: 900px;
 		@include media('<phone-land'){
 			font-size: 45px;
 			line-height: 60px;
@@ -79,20 +80,8 @@
 	}
 
 	.hero-more {
-		align-self: center;
-		margin-left: 150px;
-
-		@include media('<phone-land'){
-			align-self: flex-start;
-			margin-left: 0px;
-			margin-top: 40px;
-		}
-		@include media('<phone'){
-			align-self: flex-start;
-			margin-left: 0px;
-			margin-top: 15px;
-		}
-
+		margin-top: 20px;
+		max-width: 800px;
 		p {
 			font-size: 36px;
 			line-height: 46px;
@@ -107,7 +96,7 @@
 
 	// BLACK HERO
 	.bg-color {
-		min-height: 780px;
+		min-height: auto;
 		position: relative;
 
 		@include media('<phone'){
@@ -129,10 +118,7 @@
 			line-height: 46px;
 			font-weight: 300;
 
-			position: absolute;
-			max-width: 620px;
-			right: 5%;
-			top: 50%;
+			position: static;
 
 			@include media('<phone-land'){
 				font-size: 30px;
@@ -287,8 +273,7 @@
 
 	.apply{
 		display: inline-block;
-		float: right;
-		
+	
 		@extend .link-line;
 
 		font-size: 26px;

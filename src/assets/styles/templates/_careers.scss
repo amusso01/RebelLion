@@ -1,11 +1,11 @@
 .p-careers-section {
   background-color: $color__dark;
-  padding-top: 120px;
+  padding-top: 40px;
   padding-bottom: 90px;
 
   @include media('<phone'){
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 
 

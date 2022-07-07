@@ -2,11 +2,13 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	row-gap: 150px;
-	margin-bottom: 200px;
+	margin-bottom: 80px;
+	padding-top: 85px;
 
 	@include media('<phone'){
 		row-gap: 80px;
 		margin-bottom: 60px;
+			padding-top: 65px;
 	}
 
 	.left-top {

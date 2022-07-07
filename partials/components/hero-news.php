@@ -8,13 +8,13 @@ $postPageId = get_queried_object(  )->ID;
 
     <div class="l-container--small">
       <div class="text-container">
-        <h1 class="stroke-text" >NEWS</h1>
+        <h1 class="stroke-text" >AGENCY INSIGHTS</h1>
 
-        <?php if(get_field('hero_text')) : ?>
+
         <div data-scroll data-scroll-speed=1 class="hero-text">
-          <?php echo get_field('hero_text') ?>
+        Get to know us better, here we will share our agency news and views, and the most breaking industry news and insights.
         </div>
-        <?php endif; ?>
+
 
       </div>
 

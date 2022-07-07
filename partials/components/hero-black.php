@@ -18,9 +18,9 @@
 				<div class="text-container">
 					<h1 class="stroke-text" ><?php echo get_the_title($postPageId ) ?></h1>
 
-					<?php if(get_field('hero_text')) : ?>
+					<?php if(get_field('hero_text',  $postPageId)) : ?>
 					<div data-s2r="single" data-s2r-type="block-fade-up" class="hero-text">
-						<?php echo get_field('hero_text') ?>
+						<?php echo get_field('hero_text',  $postPageId) ?>
 					</div>
 					<?php endif; ?>
 

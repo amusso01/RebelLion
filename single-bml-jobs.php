@@ -27,7 +27,10 @@ get_header();
 				
 
 			<div class="l-container--narrow">
-				<?php the_content() ?>
+
+
+						<?php the_content() ?>
+
 
 				<div class="job-flex">
 					<p><?php echo get_field('salary') ?></p>

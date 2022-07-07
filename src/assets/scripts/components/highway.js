@@ -115,29 +115,16 @@ class AboutRenderer extends Highway.Renderer {
 	// Hooks/methods
 	onEnterCompleted() {
 
-		const svgLottieStripe = document.querySelector('.lottie-stripe')
+		// const svgLottieStripe = document.querySelector('.lottie-stripe')
 
-		const aboutStripe = {
-			loop:true, 
-			element: svgLottieStripe,
-			autoplay: true,
-			path:'https://assets2.lottiefiles.com/packages/lf20_ueeohbyb.json'
-		} // OBJ to pass to lottie web
+		// const aboutStripe = {
+		// 	loop:true, 
+		// 	element: svgLottieStripe,
+		// 	autoplay: true,
+		// 	path:'https://assets2.lottiefiles.com/packages/lf20_ueeohbyb.json'
+		// } // OBJ to pass to lottie web
 
-		const stripeLottie = lottieAnimation(aboutStripe) // STRIPE SVG LOTTIE
-
-
-		let trigerOb =  {
-			trigger: '[data-scroll-text-start]',
-			start: 'top top',
-			endTrigger: '[data-scroll-text-end]',
-			end: '150%',
-			scrub: 3,
-		}
-		const textScrollTL = trigerTL(trigerOb);
-
-		textScrollTL.to(".text-strip-forward", { x: -1200 }, 0);
-		textScrollTL.to(".text-strip-reverse", { x: 0 }, 0);
+		// const stripeLottie = lottieAnimation(aboutStripe) // STRIPE SVG LOTTIE
 	}
 
 	onLeaveCompleted() {
@@ -163,6 +150,12 @@ class HomeRenderer extends Highway.Renderer {
 		// let blobLottie = lottieAnimation(homeBlob) // BLOB SVG LOTTIE
 		// let triangleLottie = lottieAnimation(homeTriangle) // TRIANGLE SVG LOTTIE
 
+		const splitText = document.querySelectorAll('.home-hero-text p')
+
+		const overlayText = document.querySelector('.p-home-hero .orange-overlay')
+
+		const herotL = homeHeroTL(); // Hero TL
+
 		// INTRO TL
 		let trigerOb =  {
 			trigger: '#smoothContent',
@@ -178,6 +171,15 @@ class HomeRenderer extends Highway.Renderer {
 		const homeScrollTL = trigerTL(trigerOb); //INTRO TL SCROLL TRIGGER
 	
 		homeScrollTL.add(lastText.play(), "bottom+=1")
+
+		// HERO TL
+		if(!isMediumWidth){
+			herotL.from(splitText, {  y:150, duration:0.7 })
+		}else{
+			herotL.from(splitText, {  y:100, duration:1 })
+		}
+		herotL.to(overlayText, {width: "100%", duration: 0.3})
+		herotL.play();
 
 
 
@@ -221,67 +223,67 @@ class RebelsRenderer extends Highway.Renderer {
 		const rebelsSrollTrigerTL = trigerTL(trigerOb);
 
 		rebelsSrollTrigerTL.to('.o-card-team' , {y:0, duration:1})
-		rebelsSrollTrigerTL.to('.bg-text-container' , { y: -120} , 0)
+
 
 		// STARS 
-		const svgStars = gsap.utils.toArray('.svg-star')
+		// const svgStars = gsap.utils.toArray('.svg-star')
 
-		const randomX = random(1, 10);
-		const randomY = random(1, 10);
-		const randomDelay = random(0, 1);
-		const randomTime = random(3, 5);
-		const randomTime2 = random(5, 10);
-		const randomAngle = random(-10, 10);
-		const sine = gsap.parseEase("sine.easeInOut");
+		// const randomX = random(1, 10);
+		// const randomY = random(1, 10);
+		// const randomDelay = random(0, 1);
+		// const randomTime = random(3, 5);
+		// const randomTime2 = random(5, 10);
+		// const randomAngle = random(-10, 10);
+		// const sine = gsap.parseEase("sine.easeInOut");
 
 
-		function rotate(target, direction) {
+		// function rotate(target, direction) {
   
-			gsap.to(target, randomTime2(), {
-				rotation: randomAngle(direction),
-				// delay: randomDelay(),
-				ease: sine,
-				onComplete: rotate,
-				onCompleteParams: [target, direction * -1]
-			});
-		}
+		// 	gsap.to(target, randomTime2(), {
+		// 		rotation: randomAngle(direction),
+		// 		// delay: randomDelay(),
+		// 		ease: sine,
+		// 		onComplete: rotate,
+		// 		onCompleteParams: [target, direction * -1]
+		// 	});
+		// }
 		
-		function moveX(target, direction) {
+		// function moveX(target, direction) {
 			
-			gsap.to(target, randomTime(), {
-				x: randomX(direction),
-				ease: sine,
-				onComplete: moveX,
-				onCompleteParams: [target, direction * -1]
-			});
-		}
+		// 	gsap.to(target, randomTime(), {
+		// 		x: randomX(direction),
+		// 		ease: sine,
+		// 		onComplete: moveX,
+		// 		onCompleteParams: [target, direction * -1]
+		// 	});
+		// }
 		
-		function moveY(target, direction) {
+		// function moveY(target, direction) {
 			
-			gsap.to(target, randomTime(), {
-				y: randomY(direction),
-				ease: sine,
-				onComplete: moveY,
-				onCompleteParams: [target, direction * -1]
-			});
-		}
+		// 	gsap.to(target, randomTime(), {
+		// 		y: randomY(direction),
+		// 		ease: sine,
+		// 		onComplete: moveY,
+		// 		onCompleteParams: [target, direction * -1]
+		// 	});
+		// }
 		
-		function random(min, max) {
-			const delta = max - min;
-			return (direction = 1) => (min + delta * Math.random()) * direction;
-		}
+		// function random(min, max) {
+		// 	const delta = max - min;
+		// 	return (direction = 1) => (min + delta * Math.random()) * direction;
+		// }
 
-		svgStars.forEach(can => {
-			gsap.set(can, {
-				x: randomX(-1),
-				y: randomX(1),
-				rotation: randomAngle(-1)
-			});
+		// svgStars.forEach(can => {
+		// 	gsap.set(can, {
+		// 		x: randomX(-1),
+		// 		y: randomX(1),
+		// 		rotation: randomAngle(-1)
+		// 	});
 		
-			moveX(can, 1);
-			moveY(can, -1);
-			rotate(can, 1);
-		});
+		// 	moveX(can, 1);
+		// 	moveY(can, -1);
+		// 	rotate(can, 1);
+		// });
 
 
 	}

@@ -25,23 +25,14 @@ get_header();
             <div class="top-home-grid__text" >
               
               <div class="text-top"  data-s2r="single" data-s2r-type="stagger-fade-up">
-                <p> <span class="overflow" data-s2r-el> Talk? <span class="bold">It’s cheap.</span> </span></p>
-                <p><span class="overflow"data-s2r-el>But <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> walking the walk?</span></span></p>
-                <p><span class="overflow"data-s2r-el> <span class="bold">That’s what we’re about.</span></p>
+                <p> <span class="overflow" data-s2r-el> Talk? <span class="bold">It’s cheap.</span> Walking the walk is </span></p>
+                <p><span class="overflow"data-s2r-el> <span class="bold">what we’re about.</span></p>
 
               </div>
 
               <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
-                <p data-s2r-el>Because what happens to</p>
-                <p data-s2r-el >things when they're overused?</p>
-                <div class="small-text" data-s2r-el>
-                  <p>They crumble</p>
-                  <p>and break,</p>
-                  <p>
-                    they become <br> 
-                    less effective.
-                  </p>
-                </div>
+                <p data-s2r-el>We are designed to do things differently.</p>
+                <p data-s2r-el >To avoid taking the well-trodden path or regurgitating the same old same old.</p>
               </div>
 
             </div>
@@ -98,12 +89,8 @@ get_header();
           <div class="bottom-home-grid__text">
   
             <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
-              <p data-s2r-el>So, we avoid taking</p>
-              <p data-s2r-el>the well-trodden path,</p>
-              <p data-s2r-el>and <span class="bold">we don't regurgitate</span></p>
-              <p data-s2r-el><span class="bold">the same old same old,</span></p>
-              <p data-s2r-el>because those days</p>
-              <p data-s2r-el>are gone.</p>
+              <p data-s2r-el>We find new, agile ways of working that are fit for purpose, that deliver quicker and longer-lasting <span class="bold">results for our clients.</span></p>
+  
             </div>
   
           </div>
@@ -111,11 +98,11 @@ get_header();
         </div>
 
 
-        <div class="l-container--small home-text-last">
+        <!-- <div class="l-container--small home-text-last">
           <p>We find new, agile ways</p>
           <p>that are fit purpose and get quicker,</p>
           <p><span class="bold" style="position:relative; z-index:2; display:inline-block"> <span class="orange-overlay orange-overlay-last" ></span>longer-lasting result</span> for our clients.</p>
-        </div>
+        </div> -->
 
       </section>
 

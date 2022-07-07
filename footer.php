@@ -22,12 +22,16 @@
 			</div>
 			<!-- CONTACT -->
 			<div class="contact-info">
-				<p><a href="tel:02921 00001">02921 00001</a> </p>
+				<p><a href="tel:02921 00001">02921 00 00 01</a> </p>
 				<p><a href="mailto:rebel@rebel-lion.agency">rebel@rebel-lion.agency</a></p>
 			</div>
 			<!-- ADDRESS -->
-			<div class="address">
+			<div class="address" >
 				<p>The Maltings, East Tyndall Street, </br> Cardiff, CF24 5EA</p>
+				<p style="margin-top:8px"><strong>London Address</strong></p>
+				<p>WeWork, </br>
+131 Finsbury Pavement </br>
+London EC2A 1NT</p>
 			</div>
 		</div><!-- top -->
 		<!-- CENTER -->

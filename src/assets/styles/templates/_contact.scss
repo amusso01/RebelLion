@@ -1,5 +1,5 @@
 .p-contact-section {
-	padding: 300px 0 120px;
+	padding: 90px 0 120px;
 	position: relative;
 
 	@include media("<phone-land"){
@@ -20,6 +20,7 @@
 		margin: auto;
 		color: #f2f2f2;
 		z-index: -1;
+		
 		font-weight: 700;
 		letter-spacing: 3px;
 		white-space: nowrap;

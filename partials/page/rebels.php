@@ -2,8 +2,6 @@
 
 $teams = get_field('team_members');
 
-
-
 ?>
 
 
@@ -27,7 +25,7 @@ $teams = get_field('team_members');
         <p class="bio">
           <?php echo $member['member']['bio'] ?>
           <br>
-          <a class="link-line" href="<?php echo $member['member']['linkedin'] ?>">Connect on Linkedin</a>
+          <a class="link-line" target="_blank" href="<?php echo $member['member']['linkedin'] ?>"><i><?php get_template_part( 'svg-template/svg', 'linkedin' ) ?></i></a>
         </p>
       </div>
     

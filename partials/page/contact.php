@@ -13,13 +13,6 @@ $address = get_field('address');
 
   <div class="full-bg-section__white"></div>
 
-  <div class="overflow-text">
-    WRITE TO US
-    WRITE TO US
-    WRITE TO US
-    WRITE TO US
-  </div>
-
   <div class="p-contact-grid l-container--small">
     <div class="form">
       <h2 data-s2r="single" data-s2r-type="block-fade-up">Short on time? <br> Leave us a message <br> and we’ll call you back.</h2>

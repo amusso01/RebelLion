@@ -12,24 +12,24 @@
 
  ?>
 
-<section class="p-home-hero" style="background-color:#000000; height:100vh;">
+<section class="p-home-hero" >
 
-	<div class="bg-image" >
+	<div class="bg-image" style="background-color:#000000; height:100vh;">
 
-			<!-- <div class="l-container--small">
+			<div class="l-container--small">
 				<div class="text-container">
 
 
 					<div class="home-hero-text">
-						<p><span class="overflow"> Talk? <span class="bold">It’s cheap.</span> </span></p>
-						<p><span class="overflow">But <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> walking the walk?</span></span></p>
-						<p><span class="overflow"><span class="bold">That’s what we’re about.</span></span></p>
+						<p><span class="overflow"> 	Welcome, 	 we are <span class="bold">Rebel Lion</span> </span></p>
+						<p><span class="overflow"> a full-service new-era <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> advertising agency,</span></span></p>
+						<p><span class="overflow">designed to do things <span class="bold">differently. </span></span></p>
 					</div>
 
 
 				</div>
 
-			</div> -->
+			</div>
 			
   </div>
 

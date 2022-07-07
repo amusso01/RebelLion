@@ -1,8 +1,8 @@
 .p-rebels-section {
 	margin-top: 50px;
 	margin-bottom: 260px;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@include media('<phone'){
 		margin-top: 0px;
@@ -80,6 +80,7 @@
 
 	.svg-star{
 		position: absolute;
+		display: none;
 		@include media('<phone'){
 			svg{
 				width: 50px;
@@ -101,6 +102,7 @@
 
 	.bg-text {
 		color: #f39200;
+		display: none;
 		opacity: 0.15;
 		font-size: 240px;
 		letter-spacing: 9px;

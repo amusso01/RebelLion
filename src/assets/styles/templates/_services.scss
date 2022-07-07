@@ -92,6 +92,14 @@
 			opacity: 0;
 			transition: transform 0.4s, opacity 0.3s;
 
+			@include media('<phone'){
+				display: block;
+				opacity: 1;
+				margin-left: 0px;
+				transform: translateY(0px);
+				margin-bottom: 25px;
+			}
+
 			&:after {
 				height: 4px;
 			}

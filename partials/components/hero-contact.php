@@ -23,9 +23,7 @@
         <div data-scroll data-scroll-class="in-viewport" class="hero-showcase">
     
 
-        <p>If you’re looking for a different angle and a new approach to fuelling
-        your brand's growth, driving sales, and becoming more memorable
-        than ever before… this is the place!
+        <p>If you’re ready for real results, and a new approach to fuelling your brand’s growth, driving sales and becoming more memorable than ever before… We are the agency for you.
         </p>
         
         </div>

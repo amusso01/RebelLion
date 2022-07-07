@@ -3,8 +3,8 @@
 	margin-bottom: 180px;
 
 	.l-container--narrow{
-		>p{
-			margin-bottom: 30px;
+		p{
+			margin-bottom: 15px;
 			color: #777777;
 			&strong{
 				color: $color__text;
@@ -25,9 +25,15 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 70px;
+		flex-wrap: wrap;
+		row-gap: 20px;
 		>p{
 			font-size: 26px;
 			font-weight: 700;
+
+			@include media('<phone'){
+				font-size: 21px;
+			}
 		}
 	}
 

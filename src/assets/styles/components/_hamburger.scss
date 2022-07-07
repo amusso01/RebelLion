@@ -1,7 +1,12 @@
 .site-header__hamburger {
 	border: none;
 	background: transparent;
-	position: relative;
+	position: fixed;
+	top: 23px;
+	right: 1.5rem;
+	@include media(">tablet") {
+		right: 3rem;
+	}
 	.magnet-burger {
 		position: relative;
 		transition: transform 0.3s;
