@@ -12,7 +12,7 @@ footer.site-footer {
 	// TOP
 	.site-footer__top {
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-columns: 2fr 0.7fr 1fr;
 		column-gap: 90px;;
 
 		@include media("<phone-land"){
@@ -25,8 +25,17 @@ footer.site-footer {
 		}
 	}
 
+	.address-grid{
+		display: flex;
+		column-gap: 23px;
+		strong{
+			margin-bottom: 3px;
+		}
+	}
+
 	.contact-info,
 	.address {
+
 		p,
 		a {
 			color: $color__bright;

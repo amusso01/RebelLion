@@ -99,7 +99,7 @@
 		&:last-of-type {
 			margin-bottom: 0;
 		}
-		p {
+		>p {
 			&:first-of-type {
 				font-size: 24px;
 				letter-spacing: 0.9px;
@@ -125,6 +125,10 @@
 					font-size: 22px;
 				}
 			}
+		}
+		.address-grid{
+			display: flex;
+			column-gap: 20px;
 		}
 	}
 }

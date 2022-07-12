@@ -52,6 +52,20 @@ get_header();
       <?php get_template_part( 'partials/components/hero-contact' ); ?>
       <?php get_template_part( 'partials/page/contact' ) ?>
       </div>
+
+
+    <?php else : ?>
+      <div  data-router-view="plain"  >
+
+        <?php get_template_part( 'partials/components/hero-black' ); ?>
+
+        <section class="editor l-container--small">
+          <?php the_content() ?>
+        </section>
+
+        </div>
+
+
     <?php endif; ?>
 
 

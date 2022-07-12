@@ -90,7 +90,7 @@ get_header();
   
             <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
               <p data-s2r-el>We find new, agile ways of working that are fit for purpose, that deliver quicker and longer-lasting <span class="bold">results for our clients.</span></p>
-  
+              <a href="<?php echo site_url( '/about' ) ?>" class="link-line">ABOUT US</a>
             </div>
   
           </div>

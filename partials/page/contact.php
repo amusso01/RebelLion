@@ -30,8 +30,18 @@ $address = get_field('address');
         <p><a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
       </div>
       <div class="single-info">
-        <p>ADDRESS</p>
-        <p><?php echo $address ?></p>
+        <p style="font-weight:bold;" >ADDRESS</p>
+        <div class="address-grid">
+          <div class="single-address">
+            <strong>Cardiff</strong>
+            <p><?php echo $address['cardiff'] ?></p>
+          </div>
+          <div class="single-address">
+            <strong>London</strong>
+            <p><?php echo $address['london'] ?></p>
+          </div>
+        </div>
+  
       </div>
 
     </div>

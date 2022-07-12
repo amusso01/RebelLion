@@ -134,13 +134,17 @@
 	}
 
 	.o-service {
+		display:flex;
+		align-items: center;
+		flex-direction: column;
 		i {
 			margin-bottom: 30px;
 			display: inline-block;
 		}
 
 		svg {
-			width: 86px;
+			width: 80px;
+			height: 80px;
 			@include media('<phone'){
 				width: 66px;
 			}
@@ -149,10 +153,13 @@
 		p {
 			font-weight: 700;
 			text-transform: uppercase;
-			font-size: 21px;
+			font-size: 18px;
 			letter-spacing: 0.9px;
+			text-align: center;
+			max-width: 260px;
 			@include media('<phone'){
-				font-size: 18px;
+				font-size: 16px;   
+				 max-width: 100%;
 			}
 		}
 		@include media('<phone'){

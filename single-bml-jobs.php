@@ -15,36 +15,36 @@ get_header();
 
 
 <div data-router-wrapper>
-  <div class="" data-router-view="single">
+  <div class="" data-router-view="single-job">
 
-    <main class="p-single_main p-jobs-main" role="main" >
+			<main class="p-single_main p-jobs-main" role="main" >
 
-			<!-- PAGE HERO -->
-			<?php get_template_part( 'partials/jobs/single-hero' ); ?>
+				<!-- PAGE HERO -->
+				<?php get_template_part( 'partials/jobs/single-hero' ); ?>
 
-			<!-- PAGE CONTENT -->
-		  <section data-scroll-section  class="p-single-jobs-layout ">
-				
+				<!-- PAGE CONTENT -->
+				<section data-scroll-section  class="p-single-jobs-layout ">
+					
 
-			<div class="l-container--narrow">
-
-
-						<?php the_content() ?>
+				<div class="l-container--narrow">
 
 
-				<div class="job-flex">
-					<p><?php echo get_field('salary') ?></p>
-					<a href="mailto:rebel@rebel-lion.agency?subject=JOB Application: <?php echo get_the_title() ?>" class="apply">Apply now</a>
+							<?php the_content() ?>
+
+
+					<div class="job-flex">
+						<p><?php echo get_field('salary') ?></p>
+						<a href="mailto:rebel@rebel-lion.agency?subject=JOB Application: <?php echo get_the_title() ?>" class="apply">Apply now</a>
+					</div>
 				</div>
-			</div>
 
-			</section>
-							
+				</section>
+								
+	
+			</main>
  
-		 </main>
  
- 
-	 </div>
+	</div>
 </div>
 
 <?php
