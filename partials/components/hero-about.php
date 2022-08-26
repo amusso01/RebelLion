@@ -10,6 +10,8 @@
 
  $postPageId = get_queried_object(  )->ID; 
 
+ $heroText = get_field('hero') ;
+
 if ( has_post_thumbnail($postPageId) ) : ?>
 
 <section class="p-page-hero" data-scroll-text-start >
@@ -19,11 +21,11 @@ if ( has_post_thumbnail($postPageId) ) : ?>
 
           <div class="hero-showcase" data-s2r="single" data-s2r-type="block-fade-up">
     
-            <div class="hero-fade js-fade" > <p class="hero-stagger">In today’s world, you need a new era angle with your communication.</p>  </div>
+            <div class="hero-fade js-fade" > <p class="hero-stagger"><?php echo $heroText['hero_top_text']  ?></p>  </div>
           
           </div>
           <div data-s2r="single" data-s2r-type="block-fade-up" data-s2r-delay="0.3"  class="hero-more">
-            <p>A new approach to selling products, and services, and building your authority within your marketplace.</p>
+            <p><?php echo $heroText['hero_bottom_text']  ?></p>
           </div>
         </div>
 

@@ -24,7 +24,7 @@ $the_query = new WP_Query( $args );
 <section data-scroll-section  class="p-single-navigation">
   <div class="glide">
     <div class="l-container--small">
-      <h2>More works</h2>
+
     </div>
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">

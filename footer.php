@@ -22,7 +22,7 @@
 			</div>
 			<!-- CONTACT -->
 			<div class="contact-info">
-				<p><a href="tel:02921 00 00 01">02921 00 00 01</a> </p>
+	
 				<p><a href="mailto:rebel@rebel-lion.agency">rebel@rebel-lion.agency</a></p>
 			</div>
 			<!-- ADDRESS -->
@@ -30,12 +30,14 @@
 				<div class="single-address">
 					<p style="margin-top:8px"><strong>Cardiff</strong></p>
 					<p>The Maltings, </br> East Tyndall Street, </br> Cardiff, CF24 5EA</p>
+					<p><a href="tel:02921 00 00 01">02921 00 00 01</a> </p>
 				</div>
 				<div class="single-address">
 					<p style="margin-top:8px"><strong>London</strong></p>
 					<p>WeWork, </br>
 					131 Finsbury Pavement </br>
 					London EC2A 1NT</p>
+					<p><a href="tel:02030 12 00 01">02030 12 00 01</a> </p>
 				</div>
 			</div>
 		</div><!-- top -->
@@ -68,7 +70,8 @@
 			<div class="legal">
 				<ul>
 					<li><a href="<?php echo  site_url( '/privacy-policy' ) ?>">Privacy Policy</a></li>
-					<li><a href="<?php echo  site_url( 'terms-conditions' ) ?>">Terms & Conditions</a></li>
+					<li><a href="<?php echo  site_url( '/terms-conditions' ) ?>">Terms & Conditions</a></li>
+					<li><a href="<?php echo  site_url( '/cookie-policy' ) ?>">Cookie Policy</a></li>
 				</ul>
 			</div>
 

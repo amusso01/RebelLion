@@ -21,10 +21,10 @@ $address = get_field('address');
     </div>
 
     <div class="info">
-      <div class="single-info">
+      <!-- <div class="single-info">
         <p>PHONE</p>
         <p><a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></p>
-      </div>
+      </div> -->
       <div class="single-info">
         <p>EMAIL</p>
         <p><a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
@@ -35,10 +35,12 @@ $address = get_field('address');
           <div class="single-address">
             <strong>Cardiff</strong>
             <p><?php echo $address['cardiff'] ?></p>
+            <p><a href="tel:<?php echo $address['cardiff_phone'] ?>"><?php echo $address['cardiff_phone'] ?></a> </p>
           </div>
           <div class="single-address">
             <strong>London</strong>
             <p><?php echo $address['london'] ?></p>
+            <p><a href="tel:<?php echo $address['london_phone'] ?>"><?php echo $address['london_phone'] ?></a> </p>
           </div>
         </div>
   

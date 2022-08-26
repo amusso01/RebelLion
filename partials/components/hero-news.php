@@ -1,6 +1,6 @@
 <?php 
 $postPageId = get_queried_object(  )->ID; 
-
+$heroText = get_field('hero_text', 'options');
 ?>
 
 <section class="p-page-hero" style="background-color:#000000;" data-scroll-section>
@@ -12,7 +12,7 @@ $postPageId = get_queried_object(  )->ID;
 
 
         <div data-scroll data-scroll-speed=1 class="hero-text">
-        Get to know us better, here we will share our agency news and views, and the most breaking industry news and insights.
+        <?php echo $heroText ?>
         </div>
 
 

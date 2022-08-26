@@ -7,6 +7,9 @@
  * @package foundry
  */
 
+ $topText = get_field('top_text');
+ $bottomText = get_field('bottom_text');
+
 get_header();
 ?>
 
@@ -25,14 +28,11 @@ get_header();
             <div class="top-home-grid__text" >
               
               <div class="text-top"  data-s2r="single" data-s2r-type="stagger-fade-up">
-                <p> <span class="overflow" data-s2r-el> Talk? <span class="bold">It’s cheap.</span> Walking the walk is </span></p>
-                <p><span class="overflow"data-s2r-el> <span class="bold">what we’re about.</span></p>
-
+                <p data-s2r-el> <?php echo $topText['first_paragraph'] ?> </p>
               </div>
 
               <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
-                <p data-s2r-el>We are designed to do things differently.</p>
-                <p data-s2r-el >To avoid taking the well-trodden path or regurgitating the same old same old.</p>
+                <p data-s2r-el> <?php echo $topText['second_paragraph'] ?> </p>
               </div>
 
             </div>
@@ -89,7 +89,7 @@ get_header();
           <div class="bottom-home-grid__text">
   
             <div class="text-bottom" data-s2r="single" data-s2r-type="stagger-fade-up">
-              <p data-s2r-el>We find new, agile ways of working that are fit for purpose, that deliver quicker and longer-lasting <span class="bold">results for our clients.</span></p>
+              <p data-s2r-el> <?php echo $bottomText ?></p>
               <a href="<?php echo site_url( '/about' ) ?>" class="link-line">ABOUT US</a>
             </div>
   

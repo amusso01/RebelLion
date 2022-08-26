@@ -20,10 +20,13 @@
 				<div class="text-container">
 
 
-					<div class="home-hero-text">
+					<!-- <div class="home-hero-text">
 						<p><span class="overflow"> 	Welcome, 	 we are <span class="bold">Rebel Lion Advertising</span> </span></p>
 						<p><span class="overflow"> a full-service new-era <span style="position:relative; display:inline-block"><span class="orange-overlay"></span> advertising agency,</span></span></p>
 						<p><span class="overflow">designed to do things <span class="bold">differently. </span></span></p>
+					</div> -->
+					<div class="home-hero-text">
+						<?php echo get_field('hero_text') ?>
 					</div>
 
 

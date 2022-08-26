@@ -152,8 +152,6 @@ class HomeRenderer extends Highway.Renderer {
 
 		const splitText = document.querySelectorAll('.home-hero-text p')
 
-		const overlayText = document.querySelector('.p-home-hero .orange-overlay')
-
 		const herotL = homeHeroTL(); // Hero TL
 
 		// INTRO TL
@@ -178,10 +176,7 @@ class HomeRenderer extends Highway.Renderer {
 		}else{
 			herotL.from(splitText, {  y:100, duration:1 })
 		}
-		herotL.to(overlayText, {width: "100%", duration: 0.3})
 		herotL.play();
-
-
 
 	}
 	

@@ -8,11 +8,11 @@ const menuItems = document.querySelectorAll(".o-nav-menuItem");
 const tl = gsap.timeline({
 	paused: true,
 	reversed: true,
-	// onComplete: OnCompleteCheck,
+	// onComplete: PointerEvent,
 	onReverseComplete: OnCompleteCheck
 });
 
-tl.add(openMenu);
+
 tl.to(menuOverlay, {
 	width: window.outerWidth * 2,
 	height: window.outerHeight * 2,
@@ -20,15 +20,18 @@ tl.to(menuOverlay, {
 	left: -(window.outerWidth / 2),
 	duration: 0.2
 });
+tl.add(openMenu);
 tl.to(menuOverlay, { opacity: 0, duration: 0.4 });
 tl.to(menuContainer, { opacity: 1, delay: -0.6, duration: 0.3 });
-// tl.from(menuItem, {y: -30, opacity:0, stagger:0.1, duration:0.2,  delay: -0.1} );
+
 
 function masterPlay() {
 
 	return tl;
 
 }
+
+
 
 function openMenu(e) {
 	menuContainer.classList.toggle("s-active");

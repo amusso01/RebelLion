@@ -22,6 +22,13 @@
 		}
 	}
 
+	.home-hero-text{
+		.orange{
+			background-color: $color__link-hover;
+			padding: 9px 3px;
+		}
+	}
+
 	.bg-image {
 		min-height: 700px;
 		position: relative;

@@ -22,9 +22,11 @@
 
         <div data-scroll data-scroll-class="in-viewport" class="hero-showcase">
     
-
-        <p>If you’re ready for real results, and a new approach to fuelling your brand’s growth, driving sales and becoming more memorable than ever before… We are the agency for you.
+        <?php if(get_field('hero_text',  $postPageId)) : ?>
+        <p>
+        <?php echo get_field('hero_text',  $postPageId) ?>
         </p>
+        <?php endif; ?>
         
         </div>
 
