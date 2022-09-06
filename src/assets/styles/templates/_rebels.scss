@@ -134,6 +134,66 @@
 			transform: translateY(-80px);
 		}
 	}
+	&:nth-child(5){
+		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
+	}
+	&:nth-child(6){
+		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
+	}
+	&:nth-child(8){
+		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
+	}
+	&:nth-child(9){
+		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
+	}
+	&:nth-child(11){
+		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
+	}
+	&:nth-child(12){
+		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
+	}
+	&:nth-child(14){
+		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
+	}
+	&:nth-child(15){
+		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
+	}
+	&:nth-child(17){
+		transform: translateY(-100px);
+		@include media('<phone'){
+			transform: translateY(-70px);
+		}
+	}
+	&:nth-child(18){
+		transform: translateY(-200px);
+		@include media('<tablet'){
+			transform: translateY(-80px);
+		}
+	}
 
 	> figure {
 		position: relative;
