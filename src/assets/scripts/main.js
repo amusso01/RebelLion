@@ -19,6 +19,8 @@ import mouseInit from "./components/mouse";
 import { tabInteraction, catDisable } from "./components/tabs";
 
 import { init as globalInit } from "./components/global.js";
+
+
 import { carousel } from "./components/carousel";
 
 import Scroll2Reveal from './vendors/Scroll2Reveal.js';
@@ -28,6 +30,8 @@ import Scroll2Reveal from './vendors/Scroll2Reveal.js';
 
 // Init on first load
 globalInit();
+
+
 window.dispatchEvent(new Event("resize"));
 const s2r = new Scroll2Reveal();
 
